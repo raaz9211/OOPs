@@ -27,6 +27,7 @@ public:
     void cleanBakery(){
         std::cout << "Cleaning the bakery..." << std::endl;
     }
+
 };
 
 int main(){
