@@ -49,7 +49,10 @@
         "semaphore": "cpp",
         "stop_token": "cpp",
         "thread": "cpp",
-        "observer.h": "c"
+        "observer.h": "c",
+        "test3": "cpp",
+        "condition_variable": "cpp",
+        "mutex": "cpp"
     },
     "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe"
 }
