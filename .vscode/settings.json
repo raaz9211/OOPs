@@ -52,7 +52,12 @@
         "observer.h": "c",
         "test3": "cpp",
         "condition_variable": "cpp",
-        "mutex": "cpp"
+        "mutex": "cpp",
+        "map": "cpp",
+        "database.h": "c",
+        "ride.h": "c",
+        "cstdarg": "cpp",
+        "user.h": "c"
     },
     "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe"
 }
