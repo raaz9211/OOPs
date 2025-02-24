@@ -158,7 +158,7 @@ Shipra: 0 Taken, 2 Offered
 ```
 
 
-**Test input for consol** 
+**Test input for console** 
 ```
 Rohan M 36
 Rohan Swift KA-01-12345
