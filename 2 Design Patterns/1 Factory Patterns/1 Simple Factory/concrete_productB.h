@@ -4,6 +4,9 @@
 #include "product.h"
 
 class ConcreteProductB : public Product{
+// ||Method 1: Simple Factory Method Implementation||
+private:
+    static bool registered;
 public:
     void use();
 };

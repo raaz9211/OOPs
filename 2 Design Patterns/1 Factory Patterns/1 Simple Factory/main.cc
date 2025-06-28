@@ -2,11 +2,17 @@
 
 
 int main(){
-    std::unique_ptr<Product> productA = ProductFactory::creatProdyct("A");
-    std::unique_ptr<Product> productB = ProductFactory::creatProdyct("B");
+    // ||Method 1: Simple Factory Method Implementation||
 
-    productA->use();
-    productB->use();
+    // std::unique_ptr<Product> productA = ProductFactory::creatProduct("A");
+    // std::unique_ptr<Product> productB = ProductFactory::creatProduct("B");
+
+    // productA->use();
+    // productB->use();
+
+    // ||Method 2: Advanced Factory Method Implementation||
+    ProductFactory::createProduct("A")->use();
+    ProductFactory::createProduct("B")->use();
 
 }
 
