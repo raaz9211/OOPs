@@ -1,13 +1,21 @@
+#include <memory>
 #include <iostream>
+#include <thread>
+#include <chrono>
 
 #include "models/ParkingSlot.hpp"
 #include "models/ParkingFloor.hpp"
 #include "models/ParkingLot.hpp"
 #include "models/Vehicle.hpp"
 #include "models/Receipt.hpp"
+#include "models/EntryGate.hpp"
+#include "models/ExitGate.hpp"
+
 #include "services/TicketService.hpp"
 #include "services/FlatRateFeeStrategy.hpp"
-#include "models/ExitGate.hpp"
+#include "services/HourlyFeeStrategy.hpp"
+#include "services/NearestSlotStrategy.hpp"
+#include "services/ParkingLotManager.hpp"
 
 int main() {
     // // First phase
@@ -82,8 +90,101 @@ int main() {
     // auto receipt = std::make_shared<Receipt>("R123", ticket, 80.0);
     // std::cout << receipt->getReceipId() << std::endl;
 
-    auto ticket = std::make_shared<Ticket>("T123", std::make_shared<Vehicle>("DL01CA1234", VehicleType::CAR), std::make_shared<ParkingSlot>(101, SlotType::CAR_SLOT), 1);
-    auto exitGate = std::make_shared<ExitGate>(2, "Exit-1", std::make_shared<FlatRateFeeStrategy>(50.0));
-    auto receipt = exitGate->processVehicleExit(ticket);
+    // // 4th.1 phase
+    // auto ticket = std::make_shared<Ticket>("T123", std::make_shared<Vehicle>("DL01CA1234", VehicleType::CAR), std::make_shared<ParkingSlot>(101, SlotType::CAR_SLOT), 1);
+    // auto exitGate = std::make_shared<ExitGate>(2, "Exit-1", std::make_shared<FlatRateFeeStrategy>(50.0));
+    // auto receipt = exitGate->processVehicleExit(ticket);
 
+    // // 4th.2 phase
+    // auto ticket = std::make_shared<Ticket>("T123", std::make_shared<Vehicle>("DL01CA1234", VehicleType::CAR), std::make_shared<ParkingSlot>(101, SlotType::CAR_SLOT), 1);
+    // auto feeStrategy = std::make_shared<HourlyFeeStrategy>(20.0);  // ₹20/hour
+    // auto exitGate = std::make_shared<ExitGate>(2, "Exit-1", feeStrategy);
+    // auto receipt = exitGate->processVehicleExit(ticket);
+
+
+
+    
+    // // // 5th phase
+
+    // // Step 1: Create the parking lot
+    // ParkingLot lot;
+
+    // // Step 2: Create and add floors
+    // auto floor0 = std::make_shared<ParkingFloor>(0);
+    // floor0->addSlot(std::make_shared<ParkingSlot>(101, SlotType::CAR_SLOT));
+    // floor0->addSlot(std::make_shared<ParkingSlot>(102, SlotType::BIKE_SLOT));
+
+    // auto floor1 = std::make_shared<ParkingFloor>(1);
+    // floor1->addSlot(std::make_shared<ParkingSlot>(201, SlotType::CAR_SLOT));
+    // floor1->addSlot(std::make_shared<ParkingSlot>(202, SlotType::ELECTRIC_SLOT));
+
+    // lot.addFloor(floor0);
+    // lot.addFloor(floor1);
+
+    // // Step 3: Create a vehicle
+    // auto car = std::make_shared<Vehicle>("KA-01-HH-9999", VehicleType::CAR);
+
+    // // Step 4: Apply Nearest Slot Strategy
+    // NearestSlotStrategy strategy;
+    // auto slot = strategy.getAvailableSlot(lot, car);
+
+    // // Step 5: Print result
+    // if (slot) {
+    //     slot->assignVehicle(car);  // ✅ Automatically marks it occupied
+    //     std::cout << "✅ Allocated Slot ID: " << slot->getId() << std::endl;
+    // } else {
+    //     std::cout << "❌ No available slot for vehicle type.\n";
+    // }
+
+
+    // 6th Phase 
+
+    // Step 1: Create ParkingLot and add one floor
+    auto parkingLot = std::make_shared<ParkingLot>();
+
+    auto floor1 = std::make_shared<ParkingFloor>(1);
+    floor1->addSlot(std::make_shared<ParkingSlot>(101, SlotType::CAR_SLOT));
+    floor1->addSlot(std::make_shared<ParkingSlot>(102, SlotType::TRUCK_SLOT));
+    parkingLot->addFloor(floor1);
+
+    // Step 2: Strategies
+    auto slotStrategy = std::make_shared<NearestSlotStrategy>();
+    auto feeStrategy = std::make_shared<FlatRateFeeStrategy>(50);  // Flat ₹50
+
+    // Step 3: Get ParkingLotManager and configure
+    auto manager = ParkingLotManager::getInstance();
+    manager->configure(parkingLot, slotStrategy, feeStrategy);
+
+    // Step 4: Create Gates
+    auto entryGate = std::make_shared<EntryGate>(1, "Main Entry", manager->getTicketService());
+    auto exitGate = std::make_shared<ExitGate>(2, "Main Exit", feeStrategy);
+
+    manager->registerEntryGate(entryGate);
+    manager->registerExitGate(exitGate);
+
+    // Step 5: Create Vehicle
+    auto vehicle = std::make_shared<Vehicle>("KA01AB1234", VehicleType::CAR);
+
+    // Step 6: Vehicle Entry
+    auto ticket = manager->handleEntry(vehicle, 1);
+    if (ticket) {
+        std::cout << "\n[INFO] Ticket Generated: " << ticket->getTicketId() << "\n";
+    } else {
+        std::cerr << "\n[ERROR] Ticket generation failed.\n";
+        return 1;
+    }
+
+    // Simulate time passing...
+    std::this_thread::sleep_for(std::chrono::seconds(1));
+
+    // Step 7: Vehicle Exit
+    auto receipt = manager->handleExit(ticket->getTicketId(), 2);
+    if (receipt) {
+        std::cout << "[INFO] Receipt Generated: " << receipt->getReceiptId() << "\n";
+        std::cout << "[INFO] Total Fee: ₹" << receipt->getFee() << "\n";
+    } else {
+        std::cerr << "[ERROR] Exit failed.\n";
+    }
+
+    return 0;
 }

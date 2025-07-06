@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/EntryGate.o: src/EntryGate.cpp.o
+.PHONY : src/EntryGate.o
+
+# target to build an object file
+src/EntryGate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/EntryGate.cpp.o
+.PHONY : src/EntryGate.cpp.o
+
+src/EntryGate.i: src/EntryGate.cpp.i
+.PHONY : src/EntryGate.i
+
+# target to preprocess a source file
+src/EntryGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/EntryGate.cpp.i
+.PHONY : src/EntryGate.cpp.i
+
+src/EntryGate.s: src/EntryGate.cpp.s
+.PHONY : src/EntryGate.s
+
+# target to generate assembly for a file
+src/EntryGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/EntryGate.cpp.s
+.PHONY : src/EntryGate.cpp.s
+
 src/ExitGate.o: src/ExitGate.cpp.o
 .PHONY : src/ExitGate.o
 
@@ -176,6 +200,30 @@ src/ExitGate.s: src/ExitGate.cpp.s
 src/ExitGate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/ExitGate.cpp.s
 .PHONY : src/ExitGate.cpp.s
+
+src/FeeCalculationStrategy.o: src/FeeCalculationStrategy.cpp.o
+.PHONY : src/FeeCalculationStrategy.o
+
+# target to build an object file
+src/FeeCalculationStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/FeeCalculationStrategy.cpp.o
+.PHONY : src/FeeCalculationStrategy.cpp.o
+
+src/FeeCalculationStrategy.i: src/FeeCalculationStrategy.cpp.i
+.PHONY : src/FeeCalculationStrategy.i
+
+# target to preprocess a source file
+src/FeeCalculationStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/FeeCalculationStrategy.cpp.i
+.PHONY : src/FeeCalculationStrategy.cpp.i
+
+src/FeeCalculationStrategy.s: src/FeeCalculationStrategy.cpp.s
+.PHONY : src/FeeCalculationStrategy.s
+
+# target to generate assembly for a file
+src/FeeCalculationStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/FeeCalculationStrategy.cpp.s
+.PHONY : src/FeeCalculationStrategy.cpp.s
 
 src/FlatRateFeeStrategy.o: src/FlatRateFeeStrategy.cpp.o
 .PHONY : src/FlatRateFeeStrategy.o
@@ -225,6 +273,30 @@ src/Gate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/Gate.cpp.s
 .PHONY : src/Gate.cpp.s
 
+src/NearestSlotStrategy.o: src/NearestSlotStrategy.cpp.o
+.PHONY : src/NearestSlotStrategy.o
+
+# target to build an object file
+src/NearestSlotStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/NearestSlotStrategy.cpp.o
+.PHONY : src/NearestSlotStrategy.cpp.o
+
+src/NearestSlotStrategy.i: src/NearestSlotStrategy.cpp.i
+.PHONY : src/NearestSlotStrategy.i
+
+# target to preprocess a source file
+src/NearestSlotStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/NearestSlotStrategy.cpp.i
+.PHONY : src/NearestSlotStrategy.cpp.i
+
+src/NearestSlotStrategy.s: src/NearestSlotStrategy.cpp.s
+.PHONY : src/NearestSlotStrategy.s
+
+# target to generate assembly for a file
+src/NearestSlotStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/NearestSlotStrategy.cpp.s
+.PHONY : src/NearestSlotStrategy.cpp.s
+
 src/ParkingFloor.o: src/ParkingFloor.cpp.o
 .PHONY : src/ParkingFloor.o
 
@@ -272,6 +344,30 @@ src/ParkingLot.s: src/ParkingLot.cpp.s
 src/ParkingLot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/ParkingLot.cpp.s
 .PHONY : src/ParkingLot.cpp.s
+
+src/ParkingLotManager.o: src/ParkingLotManager.cpp.o
+.PHONY : src/ParkingLotManager.o
+
+# target to build an object file
+src/ParkingLotManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/ParkingLotManager.cpp.o
+.PHONY : src/ParkingLotManager.cpp.o
+
+src/ParkingLotManager.i: src/ParkingLotManager.cpp.i
+.PHONY : src/ParkingLotManager.i
+
+# target to preprocess a source file
+src/ParkingLotManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/ParkingLotManager.cpp.i
+.PHONY : src/ParkingLotManager.cpp.i
+
+src/ParkingLotManager.s: src/ParkingLotManager.cpp.s
+.PHONY : src/ParkingLotManager.s
+
+# target to generate assembly for a file
+src/ParkingLotManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/ParkingLotManager.cpp.s
+.PHONY : src/ParkingLotManager.cpp.s
 
 src/ParkingSlot.o: src/ParkingSlot.cpp.o
 .PHONY : src/ParkingSlot.o
@@ -405,21 +501,33 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/EntryGate.o"
+	@echo "... src/EntryGate.i"
+	@echo "... src/EntryGate.s"
 	@echo "... src/ExitGate.o"
 	@echo "... src/ExitGate.i"
 	@echo "... src/ExitGate.s"
+	@echo "... src/FeeCalculationStrategy.o"
+	@echo "... src/FeeCalculationStrategy.i"
+	@echo "... src/FeeCalculationStrategy.s"
 	@echo "... src/FlatRateFeeStrategy.o"
 	@echo "... src/FlatRateFeeStrategy.i"
 	@echo "... src/FlatRateFeeStrategy.s"
 	@echo "... src/Gate.o"
 	@echo "... src/Gate.i"
 	@echo "... src/Gate.s"
+	@echo "... src/NearestSlotStrategy.o"
+	@echo "... src/NearestSlotStrategy.i"
+	@echo "... src/NearestSlotStrategy.s"
 	@echo "... src/ParkingFloor.o"
 	@echo "... src/ParkingFloor.i"
 	@echo "... src/ParkingFloor.s"
 	@echo "... src/ParkingLot.o"
 	@echo "... src/ParkingLot.i"
 	@echo "... src/ParkingLot.s"
+	@echo "... src/ParkingLotManager.o"
+	@echo "... src/ParkingLotManager.i"
+	@echo "... src/ParkingLotManager.s"
 	@echo "... src/ParkingSlot.o"
 	@echo "... src/ParkingSlot.i"
 	@echo "... src/ParkingSlot.s"

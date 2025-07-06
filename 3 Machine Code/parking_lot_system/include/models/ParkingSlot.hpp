@@ -19,5 +19,6 @@ public:
     void assignVehicle(const std::shared_ptr<Vehicle>& vehicle);
     void removeVehicle();
     std::shared_ptr<Vehicle> getParkedVehicle() const;
+    static SlotType getSlotTypeForVehicle(VehicleType type);
 
 };

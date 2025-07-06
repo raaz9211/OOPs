@@ -17,7 +17,7 @@ private:
 public:
     Receipt(const std::string &id, std::shared_ptr<Ticket> ticket, double fee, std::chrono::system_clock::time_point exitTime);
 
-    std::string getReceipId() const;
+    std::string getReceiptId() const;
     std::chrono::system_clock::time_point getExitTime() const;
     std::shared_ptr<Ticket> getTicket() const;
     double getFee() const;

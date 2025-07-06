@@ -1,3 +1,5 @@
+#include <stdexcept>
+
 #include "models/ParkingSlot.hpp"
 
 ParkingSlot::ParkingSlot(int id, SlotType type)
@@ -27,4 +29,16 @@ void ParkingSlot::removeVehicle() {
 
 std::shared_ptr<Vehicle> ParkingSlot::getParkedVehicle() const {
     return parkedVehicle;
+}
+
+
+SlotType ParkingSlot::getSlotTypeForVehicle(VehicleType type) {
+    switch (type) {
+        case VehicleType::CAR:   return SlotType::CAR_SLOT;
+        case VehicleType::BIKE:  return SlotType::BIKE_SLOT;
+        case VehicleType::TRUCK: return SlotType::TRUCK_SLOT;
+        case VehicleType::ELECTRIC:    return SlotType::ELECTRIC_SLOT;
+        default: throw std::invalid_argument("Unknown VehicleType");
+
+    }
 }

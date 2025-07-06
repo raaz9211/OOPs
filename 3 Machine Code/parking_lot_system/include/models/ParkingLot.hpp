@@ -15,4 +15,5 @@ public:
     std::vector<std::shared_ptr<ParkingSlot>> getAllAvailableSlots(SlotType type) const;
 
     std::shared_ptr<ParkingFloor> getFloor(int floorNumber) const;
+    std::vector<std::shared_ptr<ParkingFloor>> getFloors() const;
 };

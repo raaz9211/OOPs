@@ -31,3 +31,11 @@ std::shared_ptr<ParkingFloor> ParkingLot::getFloor(int floorNumber) const {
     }
     return nullptr;
 }
+
+std::vector<std::shared_ptr<ParkingFloor>> ParkingLot::getFloors() const {
+    std::vector<std::shared_ptr<ParkingFloor>> result;
+    for (const auto &[_, floor] : floors) {
+        result.push_back(floor);
+    }
+    return result;
+}

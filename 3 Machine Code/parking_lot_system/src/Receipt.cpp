@@ -4,7 +4,7 @@ Receipt::Receipt(const std::string &id, std::shared_ptr<Ticket> ticket, double f
 : receiptId(id), ticket(ticket), fee(fee), exitTime(exitTime) {}
 
 
-std::string Receipt::getReceipId() const {
+std::string Receipt::getReceiptId() const {
     return receiptId;
 }
 
