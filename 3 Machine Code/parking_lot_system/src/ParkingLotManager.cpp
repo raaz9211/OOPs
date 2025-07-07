@@ -30,6 +30,7 @@ void ParkingLotManager::registerExitGate(std::shared_ptr<ExitGate> gate) {
     exitGates[gate->getId()] = gate;
 }
 
+
 std::shared_ptr<Ticket> ParkingLotManager::handleEntry(const std::shared_ptr<Vehicle> &vehicle, int entryGateId) {
     if(!ticketService or !parkingLot or !slotStrategy) {
         std::cerr << "[ERROR] ParkingLotManager is not fully configured.\n";
@@ -49,6 +50,10 @@ std::shared_ptr<Ticket> ParkingLotManager::handleEntry(const std::shared_ptr<Veh
     }
 
     slot->assignVehicle(vehicle);
+    auto floor = parkingLot->getFloor(slot->getFloorNumber());
+    if (floor) {
+        floor->updateDisplayBoard();
+    }
 
     return gateIt->second->processVehicleEntry(vehicle, slot);
 }
@@ -69,6 +74,16 @@ std::shared_ptr<Receipt> ParkingLotManager::handleExit(const std::string &ticket
     if (!ticket) {
         std::cerr << "[ERROR] Invalid ticket ID: " << ticketId << "\n";
         return nullptr;
+    }
+
+    auto slot = ticket->getParkingSlot();
+    if (slot) {
+        slot->removeVehicle();
+    }
+    
+    auto floor = parkingLot->getFloor(ticket->getParkingSlot()->getFloorNumber());
+    if (floor) {
+        floor->updateDisplayBoard();
     }
 
     return gateIt->second->processVehicleExit(ticket);

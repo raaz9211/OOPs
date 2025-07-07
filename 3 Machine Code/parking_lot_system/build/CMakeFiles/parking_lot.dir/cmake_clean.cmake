@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/parking_lot.dir/main.cpp.o"
   "CMakeFiles/parking_lot.dir/main.cpp.o.d"
+  "CMakeFiles/parking_lot.dir/src/DisplayBoard.cpp.o"
+  "CMakeFiles/parking_lot.dir/src/DisplayBoard.cpp.o.d"
   "CMakeFiles/parking_lot.dir/src/EntryGate.cpp.o"
   "CMakeFiles/parking_lot.dir/src/EntryGate.cpp.o.d"
   "CMakeFiles/parking_lot.dir/src/ExitGate.cpp.o"

@@ -6,11 +6,12 @@
 class ParkingSlot {
 private:
     int id;
+    int floorNumber; 
     SlotType type;
     bool occupied;
     std::shared_ptr<Vehicle> parkedVehicle;
 public:
-    ParkingSlot(int id, SlotType type);
+    ParkingSlot(int id, SlotType type, int floorNumber);
 
     int getId() const;
     SlotType getType() const;
@@ -20,5 +21,5 @@ public:
     void removeVehicle();
     std::shared_ptr<Vehicle> getParkedVehicle() const;
     static SlotType getSlotTypeForVehicle(VehicleType type);
-
+    int getFloorNumber() const;
 };

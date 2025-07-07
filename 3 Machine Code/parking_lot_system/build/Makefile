@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/DisplayBoard.o: src/DisplayBoard.cpp.o
+.PHONY : src/DisplayBoard.o
+
+# target to build an object file
+src/DisplayBoard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/DisplayBoard.cpp.o
+.PHONY : src/DisplayBoard.cpp.o
+
+src/DisplayBoard.i: src/DisplayBoard.cpp.i
+.PHONY : src/DisplayBoard.i
+
+# target to preprocess a source file
+src/DisplayBoard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/DisplayBoard.cpp.i
+.PHONY : src/DisplayBoard.cpp.i
+
+src/DisplayBoard.s: src/DisplayBoard.cpp.s
+.PHONY : src/DisplayBoard.s
+
+# target to generate assembly for a file
+src/DisplayBoard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/DisplayBoard.cpp.s
+.PHONY : src/DisplayBoard.cpp.s
+
 src/EntryGate.o: src/EntryGate.cpp.o
 .PHONY : src/EntryGate.o
 
@@ -501,6 +525,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/DisplayBoard.o"
+	@echo "... src/DisplayBoard.i"
+	@echo "... src/DisplayBoard.s"
 	@echo "... src/EntryGate.o"
 	@echo "... src/EntryGate.i"
 	@echo "... src/EntryGate.s"

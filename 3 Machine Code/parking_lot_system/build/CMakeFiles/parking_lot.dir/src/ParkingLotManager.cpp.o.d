@@ -167,19 +167,7 @@ CMakeFiles/parking_lot.dir/src/ParkingLotManager.cpp.o: \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/ParkingSlot.hpp \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/Vehicle.hpp \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/enums/VehicleType.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/Ticket.hpp \
- /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
- /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
- /usr/include/c++/13/limits /usr/include/c++/13/ctime \
- /usr/include/c++/13/bits/parse_numbers.h \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/Receipt.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/EntryGate.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/Gate.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/../services/TicketService.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/ExitGate.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/../services/FeeCalculationStrategy.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/services/SlotAllocationStrategy.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/services/../models/ParkingLot.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/../utils/DisplayBoard.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \
@@ -197,4 +185,17 @@ CMakeFiles/parking_lot.dir/src/ParkingLotManager.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc
+ /usr/include/c++/13/bits/istream.tcc \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/Ticket.hpp \
+ /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
+ /usr/include/c++/13/limits /usr/include/c++/13/ctime \
+ /usr/include/c++/13/bits/parse_numbers.h \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/Receipt.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/EntryGate.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/Gate.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/../services/TicketService.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/ExitGate.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/../services/FeeCalculationStrategy.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/services/SlotAllocationStrategy.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/services/../models/ParkingLot.hpp

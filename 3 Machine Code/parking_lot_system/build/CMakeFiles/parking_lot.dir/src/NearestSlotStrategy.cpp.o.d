@@ -186,4 +186,5 @@ CMakeFiles/parking_lot.dir/src/NearestSlotStrategy.cpp.o: \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/enums/SlotType.hpp \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/ParkingSlot.hpp \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/Vehicle.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/enums/VehicleType.hpp
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/enums/VehicleType.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/include/models/../utils/DisplayBoard.hpp

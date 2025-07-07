@@ -2,8 +2,8 @@
 
 #include "models/ParkingSlot.hpp"
 
-ParkingSlot::ParkingSlot(int id, SlotType type)
-    : id(id), type(type), occupied(false), parkedVehicle(nullptr) {}
+ParkingSlot::ParkingSlot(int id, SlotType type, int floorNumber)
+    : id(id), type(type), occupied(false), parkedVehicle(nullptr), floorNumber(floorNumber) {}
 
 int ParkingSlot::getId() const {
     return id;
@@ -41,4 +41,8 @@ SlotType ParkingSlot::getSlotTypeForVehicle(VehicleType type) {
         default: throw std::invalid_argument("Unknown VehicleType");
 
     }
+}
+
+int ParkingSlot::getFloorNumber() const {
+    return floorNumber;
 }

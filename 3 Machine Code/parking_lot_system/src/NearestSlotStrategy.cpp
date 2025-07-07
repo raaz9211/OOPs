@@ -12,7 +12,7 @@ std::shared_ptr<ParkingSlot> NearestSlotStrategy::getAvailableSlot(
     for (const auto& floor : lot.getFloors()){
         auto slot = floor->getNextAvailableSlot(desiredType);
         if(slot) {
-            std::cout << slot.get()->getId();
+            // std::cout << slot.get()->getId();
             return slot;
         }
     }

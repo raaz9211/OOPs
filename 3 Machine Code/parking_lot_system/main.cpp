@@ -17,6 +17,9 @@
 #include "services/NearestSlotStrategy.hpp"
 #include "services/ParkingLotManager.hpp"
 
+#include "utils/DisplayBoard.hpp"
+
+
 int main() {
     // // First phase
     // auto vechicle = std::make_shared<Vehicle>("DL01AB1234", VehicleType::CAR);
@@ -143,24 +146,28 @@ int main() {
     auto parkingLot = std::make_shared<ParkingLot>();
 
     auto floor1 = std::make_shared<ParkingFloor>(1);
-    floor1->addSlot(std::make_shared<ParkingSlot>(101, SlotType::CAR_SLOT));
-    floor1->addSlot(std::make_shared<ParkingSlot>(102, SlotType::TRUCK_SLOT));
+    floor1->addSlot(std::make_shared<ParkingSlot>(101, SlotType::CAR_SLOT, floor1->getFloorNumber()));
+    floor1->addSlot(std::make_shared<ParkingSlot>(102, SlotType::TRUCK_SLOT, floor1->getFloorNumber()));
     parkingLot->addFloor(floor1);
 
     // Step 2: Strategies
     auto slotStrategy = std::make_shared<NearestSlotStrategy>();
     auto feeStrategy = std::make_shared<FlatRateFeeStrategy>(50);  // Flat ₹50
 
-    // Step 3: Get ParkingLotManager and configure
+    // Step 3: Configure ParkingLotManager
     auto manager = ParkingLotManager::getInstance();
     manager->configure(parkingLot, slotStrategy, feeStrategy);
 
     // Step 4: Create Gates
     auto entryGate = std::make_shared<EntryGate>(1, "Main Entry", manager->getTicketService());
     auto exitGate = std::make_shared<ExitGate>(2, "Main Exit", feeStrategy);
-
     manager->registerEntryGate(entryGate);
     manager->registerExitGate(exitGate);
+
+    // 📋 Display availability before entry
+    auto board  = floor1->getDisplayBoard();
+    std::cout << "\n[DISPLAY] Before Entry:\n";
+    board->show();
 
     // Step 5: Create Vehicle
     auto vehicle = std::make_shared<Vehicle>("KA01AB1234", VehicleType::CAR);
@@ -174,7 +181,11 @@ int main() {
         return 1;
     }
 
-    // Simulate time passing...
+    // 📋 Display availability after entry
+    std::cout << "\n[DISPLAY] After Entry:\n";
+    board->show();
+
+    // Simulate time passing
     std::this_thread::sleep_for(std::chrono::seconds(1));
 
     // Step 7: Vehicle Exit
@@ -185,6 +196,10 @@ int main() {
     } else {
         std::cerr << "[ERROR] Exit failed.\n";
     }
+
+    // 📋 Display availability after exit
+    std::cout << "\n[DISPLAY] After Exit:\n";
+    board->show();
 
     return 0;
 }
