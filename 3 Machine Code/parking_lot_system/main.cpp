@@ -16,6 +16,7 @@
 #include "services/HourlyFeeStrategy.hpp"
 #include "services/NearestSlotStrategy.hpp"
 #include "services/ParkingLotManager.hpp"
+#include "services/VehicleFactory.hpp"
 
 #include "utils/DisplayBoard.hpp"
 
@@ -170,7 +171,7 @@ int main() {
     board->show();
 
     // Step 5: Create Vehicle
-    auto vehicle = std::make_shared<Vehicle>("KA01AB1234", VehicleType::CAR);
+    auto vehicle = VehicleFactory::createVehicle("KA01AB1234", VehicleType::CAR);
 
     // Step 6: Vehicle Entry
     auto ticket = manager->handleEntry(vehicle, 1);
@@ -190,12 +191,12 @@ int main() {
 
     // Step 7: Vehicle Exit
     auto receipt = manager->handleExit(ticket->getTicketId(), 2);
-    if (receipt) {
-        std::cout << "[INFO] Receipt Generated: " << receipt->getReceiptId() << "\n";
-        std::cout << "[INFO] Total Fee: ₹" << receipt->getFee() << "\n";
-    } else {
-        std::cerr << "[ERROR] Exit failed.\n";
-    }
+    // if (receipt) {
+    //     std::cout << "[INFO] Receipt Generated: " << receipt->getReceiptId() << "\n";
+    //     std::cout << "[INFO] Total Fee: ₹" << receipt->getFee() << "\n";
+    // } else {
+    //     std::cerr << "[ERROR] Exit failed.\n";
+    // }
 
     // 📋 Display availability after exit
     std::cout << "\n[DISPLAY] After Exit:\n";

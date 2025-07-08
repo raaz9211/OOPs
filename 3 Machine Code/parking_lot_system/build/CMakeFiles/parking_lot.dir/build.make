@@ -223,10 +223,24 @@ CMakeFiles/parking_lot.dir/src/ParkingSlot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parking_lot.dir/src/ParkingSlot.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/ParkingSlot.cpp" -o CMakeFiles/parking_lot.dir/src/ParkingSlot.cpp.s
 
+CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o: CMakeFiles/parking_lot.dir/flags.make
+CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/src/PaymentService.cpp
+CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o: CMakeFiles/parking_lot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o -MF CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o.d -o CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/PaymentService.cpp"
+
+CMakeFiles/parking_lot.dir/src/PaymentService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parking_lot.dir/src/PaymentService.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/PaymentService.cpp" > CMakeFiles/parking_lot.dir/src/PaymentService.cpp.i
+
+CMakeFiles/parking_lot.dir/src/PaymentService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parking_lot.dir/src/PaymentService.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/PaymentService.cpp" -o CMakeFiles/parking_lot.dir/src/PaymentService.cpp.s
+
 CMakeFiles/parking_lot.dir/src/Receipt.cpp.o: CMakeFiles/parking_lot.dir/flags.make
 CMakeFiles/parking_lot.dir/src/Receipt.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/src/Receipt.cpp
 CMakeFiles/parking_lot.dir/src/Receipt.cpp.o: CMakeFiles/parking_lot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/parking_lot.dir/src/Receipt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/parking_lot.dir/src/Receipt.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_lot.dir/src/Receipt.cpp.o -MF CMakeFiles/parking_lot.dir/src/Receipt.cpp.o.d -o CMakeFiles/parking_lot.dir/src/Receipt.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/Receipt.cpp"
 
 CMakeFiles/parking_lot.dir/src/Receipt.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/parking_lot.dir/src/Receipt.cpp.s: cmake_force
 CMakeFiles/parking_lot.dir/src/Ticket.cpp.o: CMakeFiles/parking_lot.dir/flags.make
 CMakeFiles/parking_lot.dir/src/Ticket.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/src/Ticket.cpp
 CMakeFiles/parking_lot.dir/src/Ticket.cpp.o: CMakeFiles/parking_lot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/parking_lot.dir/src/Ticket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/parking_lot.dir/src/Ticket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_lot.dir/src/Ticket.cpp.o -MF CMakeFiles/parking_lot.dir/src/Ticket.cpp.o.d -o CMakeFiles/parking_lot.dir/src/Ticket.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/Ticket.cpp"
 
 CMakeFiles/parking_lot.dir/src/Ticket.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/parking_lot.dir/src/Ticket.cpp.s: cmake_force
 CMakeFiles/parking_lot.dir/src/TicketService.cpp.o: CMakeFiles/parking_lot.dir/flags.make
 CMakeFiles/parking_lot.dir/src/TicketService.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/src/TicketService.cpp
 CMakeFiles/parking_lot.dir/src/TicketService.cpp.o: CMakeFiles/parking_lot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/parking_lot.dir/src/TicketService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/parking_lot.dir/src/TicketService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_lot.dir/src/TicketService.cpp.o -MF CMakeFiles/parking_lot.dir/src/TicketService.cpp.o.d -o CMakeFiles/parking_lot.dir/src/TicketService.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/TicketService.cpp"
 
 CMakeFiles/parking_lot.dir/src/TicketService.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/parking_lot.dir/src/TicketService.cpp.s: cmake_force
 CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o: CMakeFiles/parking_lot.dir/flags.make
 CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/src/Vehicle.cpp
 CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o: CMakeFiles/parking_lot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o -MF CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o.d -o CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/Vehicle.cpp"
 
 CMakeFiles/parking_lot.dir/src/Vehicle.cpp.i: cmake_force
@@ -279,10 +293,24 @@ CMakeFiles/parking_lot.dir/src/Vehicle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parking_lot.dir/src/Vehicle.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/Vehicle.cpp" -o CMakeFiles/parking_lot.dir/src/Vehicle.cpp.s
 
+CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o: CMakeFiles/parking_lot.dir/flags.make
+CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/src/VehicleFactory.cpp
+CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o: CMakeFiles/parking_lot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o -MF CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o.d -o CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/VehicleFactory.cpp"
+
+CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/VehicleFactory.cpp" > CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.i
+
+CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/src/VehicleFactory.cpp" -o CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.s
+
 CMakeFiles/parking_lot.dir/main.cpp.o: CMakeFiles/parking_lot.dir/flags.make
 CMakeFiles/parking_lot.dir/main.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/parking_lot_system/main.cpp
 CMakeFiles/parking_lot.dir/main.cpp.o: CMakeFiles/parking_lot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/parking_lot.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/parking_lot.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_lot.dir/main.cpp.o -MF CMakeFiles/parking_lot.dir/main.cpp.o.d -o CMakeFiles/parking_lot.dir/main.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/main.cpp"
 
 CMakeFiles/parking_lot.dir/main.cpp.i: cmake_force
@@ -306,10 +334,12 @@ parking_lot_OBJECTS = \
 "CMakeFiles/parking_lot.dir/src/ParkingLot.cpp.o" \
 "CMakeFiles/parking_lot.dir/src/ParkingLotManager.cpp.o" \
 "CMakeFiles/parking_lot.dir/src/ParkingSlot.cpp.o" \
+"CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o" \
 "CMakeFiles/parking_lot.dir/src/Receipt.cpp.o" \
 "CMakeFiles/parking_lot.dir/src/Ticket.cpp.o" \
 "CMakeFiles/parking_lot.dir/src/TicketService.cpp.o" \
 "CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o" \
+"CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o" \
 "CMakeFiles/parking_lot.dir/main.cpp.o"
 
 # External object files for target parking_lot
@@ -326,14 +356,16 @@ parking_lot: CMakeFiles/parking_lot.dir/src/ParkingFloor.cpp.o
 parking_lot: CMakeFiles/parking_lot.dir/src/ParkingLot.cpp.o
 parking_lot: CMakeFiles/parking_lot.dir/src/ParkingLotManager.cpp.o
 parking_lot: CMakeFiles/parking_lot.dir/src/ParkingSlot.cpp.o
+parking_lot: CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o
 parking_lot: CMakeFiles/parking_lot.dir/src/Receipt.cpp.o
 parking_lot: CMakeFiles/parking_lot.dir/src/Ticket.cpp.o
 parking_lot: CMakeFiles/parking_lot.dir/src/TicketService.cpp.o
 parking_lot: CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o
+parking_lot: CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o
 parking_lot: CMakeFiles/parking_lot.dir/main.cpp.o
 parking_lot: CMakeFiles/parking_lot.dir/build.make
 parking_lot: CMakeFiles/parking_lot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable parking_lot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/parking_lot_system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable parking_lot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/parking_lot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

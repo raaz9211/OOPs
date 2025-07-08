@@ -417,6 +417,30 @@ src/ParkingSlot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/ParkingSlot.cpp.s
 .PHONY : src/ParkingSlot.cpp.s
 
+src/PaymentService.o: src/PaymentService.cpp.o
+.PHONY : src/PaymentService.o
+
+# target to build an object file
+src/PaymentService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o
+.PHONY : src/PaymentService.cpp.o
+
+src/PaymentService.i: src/PaymentService.cpp.i
+.PHONY : src/PaymentService.i
+
+# target to preprocess a source file
+src/PaymentService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/PaymentService.cpp.i
+.PHONY : src/PaymentService.cpp.i
+
+src/PaymentService.s: src/PaymentService.cpp.s
+.PHONY : src/PaymentService.s
+
+# target to generate assembly for a file
+src/PaymentService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/PaymentService.cpp.s
+.PHONY : src/PaymentService.cpp.s
+
 src/Receipt.o: src/Receipt.cpp.o
 .PHONY : src/Receipt.o
 
@@ -513,6 +537,30 @@ src/Vehicle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/Vehicle.cpp.s
 .PHONY : src/Vehicle.cpp.s
 
+src/VehicleFactory.o: src/VehicleFactory.cpp.o
+.PHONY : src/VehicleFactory.o
+
+# target to build an object file
+src/VehicleFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o
+.PHONY : src/VehicleFactory.cpp.o
+
+src/VehicleFactory.i: src/VehicleFactory.cpp.i
+.PHONY : src/VehicleFactory.i
+
+# target to preprocess a source file
+src/VehicleFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.i
+.PHONY : src/VehicleFactory.cpp.i
+
+src/VehicleFactory.s: src/VehicleFactory.cpp.s
+.PHONY : src/VehicleFactory.s
+
+# target to generate assembly for a file
+src/VehicleFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parking_lot.dir/build.make CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.s
+.PHONY : src/VehicleFactory.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -558,6 +606,9 @@ help:
 	@echo "... src/ParkingSlot.o"
 	@echo "... src/ParkingSlot.i"
 	@echo "... src/ParkingSlot.s"
+	@echo "... src/PaymentService.o"
+	@echo "... src/PaymentService.i"
+	@echo "... src/PaymentService.s"
 	@echo "... src/Receipt.o"
 	@echo "... src/Receipt.i"
 	@echo "... src/Receipt.s"
@@ -570,6 +621,9 @@ help:
 	@echo "... src/Vehicle.o"
 	@echo "... src/Vehicle.i"
 	@echo "... src/Vehicle.s"
+	@echo "... src/VehicleFactory.o"
+	@echo "... src/VehicleFactory.i"
+	@echo "... src/VehicleFactory.s"
 .PHONY : help
 
 

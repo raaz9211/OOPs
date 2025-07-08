@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/parking_lot.dir/src/ParkingLotManager.cpp.o.d"
   "CMakeFiles/parking_lot.dir/src/ParkingSlot.cpp.o"
   "CMakeFiles/parking_lot.dir/src/ParkingSlot.cpp.o.d"
+  "CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o"
+  "CMakeFiles/parking_lot.dir/src/PaymentService.cpp.o.d"
   "CMakeFiles/parking_lot.dir/src/Receipt.cpp.o"
   "CMakeFiles/parking_lot.dir/src/Receipt.cpp.o.d"
   "CMakeFiles/parking_lot.dir/src/Ticket.cpp.o"
@@ -31,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/parking_lot.dir/src/TicketService.cpp.o.d"
   "CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o"
   "CMakeFiles/parking_lot.dir/src/Vehicle.cpp.o.d"
+  "CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o"
+  "CMakeFiles/parking_lot.dir/src/VehicleFactory.cpp.o.d"
   "parking_lot"
   "parking_lot.pdb"
 )

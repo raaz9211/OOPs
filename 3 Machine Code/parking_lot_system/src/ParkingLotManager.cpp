@@ -1,6 +1,7 @@
-#include "services/ParkingLotManager.hpp"
 #include <iostream>
 #include <chrono>
+
+#include "services/ParkingLotManager.hpp"
 
 ParkingLotManager::ParkingLotManager() = default;
 
