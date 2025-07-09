@@ -1,0 +1,3 @@
+/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles/book_my_show.dir
+/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles/edit_cache.dir
+/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles/rebuild_cache.dir

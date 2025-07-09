@@ -57,6 +57,10 @@
         "span": "cpp",
         "sstream": "cpp",
         "variant": "cpp",
-        "paymentmodehpp": "cpp"
+        "paymentmodehpp": "cpp",
+        "stacktrace": "cpp",
+        "condition_variable": "cpp",
+        "mutex": "cpp",
+        "unordered_set": "cpp"
     }
 }
