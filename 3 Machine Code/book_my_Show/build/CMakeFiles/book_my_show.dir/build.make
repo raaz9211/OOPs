@@ -69,10 +69,24 @@ include CMakeFiles/book_my_show.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/book_my_show.dir/flags.make
 
+CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o: CMakeFiles/book_my_show.dir/flags.make
+CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/BookMyShowManager.cpp
+CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o: CMakeFiles/book_my_show.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o -MF CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o.d -o CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/BookMyShowManager.cpp"
+
+CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/BookMyShowManager.cpp" > CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.i
+
+CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/BookMyShowManager.cpp" -o CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.s
+
 CMakeFiles/book_my_show.dir/src/BookingService.cpp.o: CMakeFiles/book_my_show.dir/flags.make
 CMakeFiles/book_my_show.dir/src/BookingService.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/BookingService.cpp
 CMakeFiles/book_my_show.dir/src/BookingService.cpp.o: CMakeFiles/book_my_show.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/book_my_show.dir/src/BookingService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/book_my_show.dir/src/BookingService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_my_show.dir/src/BookingService.cpp.o -MF CMakeFiles/book_my_show.dir/src/BookingService.cpp.o.d -o CMakeFiles/book_my_show.dir/src/BookingService.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/BookingService.cpp"
 
 CMakeFiles/book_my_show.dir/src/BookingService.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/book_my_show.dir/src/BookingService.cpp.s: cmake_force
 CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o: CMakeFiles/book_my_show.dir/flags.make
 CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/PaymentService.cpp
 CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o: CMakeFiles/book_my_show.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o -MF CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o.d -o CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/PaymentService.cpp"
 
 CMakeFiles/book_my_show.dir/src/PaymentService.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/book_my_show.dir/src/PaymentService.cpp.s: cmake_force
 CMakeFiles/book_my_show.dir/src/SearchService.cpp.o: CMakeFiles/book_my_show.dir/flags.make
 CMakeFiles/book_my_show.dir/src/SearchService.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/SearchService.cpp
 CMakeFiles/book_my_show.dir/src/SearchService.cpp.o: CMakeFiles/book_my_show.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/book_my_show.dir/src/SearchService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/book_my_show.dir/src/SearchService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_my_show.dir/src/SearchService.cpp.o -MF CMakeFiles/book_my_show.dir/src/SearchService.cpp.o.d -o CMakeFiles/book_my_show.dir/src/SearchService.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/SearchService.cpp"
 
 CMakeFiles/book_my_show.dir/src/SearchService.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/book_my_show.dir/src/SearchService.cpp.s: cmake_force
 CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o: CMakeFiles/book_my_show.dir/flags.make
 CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/SeatLockManager.cpp
 CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o: CMakeFiles/book_my_show.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o -MF CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o.d -o CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/SeatLockManager.cpp"
 
 CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.s: cmake_force
 CMakeFiles/book_my_show.dir/src/ShowService.cpp.o: CMakeFiles/book_my_show.dir/flags.make
 CMakeFiles/book_my_show.dir/src/ShowService.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/ShowService.cpp
 CMakeFiles/book_my_show.dir/src/ShowService.cpp.o: CMakeFiles/book_my_show.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/book_my_show.dir/src/ShowService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/book_my_show.dir/src/ShowService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_my_show.dir/src/ShowService.cpp.o -MF CMakeFiles/book_my_show.dir/src/ShowService.cpp.o.d -o CMakeFiles/book_my_show.dir/src/ShowService.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/ShowService.cpp"
 
 CMakeFiles/book_my_show.dir/src/ShowService.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/book_my_show.dir/src/ShowService.cpp.s: cmake_force
 CMakeFiles/book_my_show.dir/main.cpp.o: CMakeFiles/book_my_show.dir/flags.make
 CMakeFiles/book_my_show.dir/main.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/main.cpp
 CMakeFiles/book_my_show.dir/main.cpp.o: CMakeFiles/book_my_show.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/book_my_show.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/book_my_show.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_my_show.dir/main.cpp.o -MF CMakeFiles/book_my_show.dir/main.cpp.o.d -o CMakeFiles/book_my_show.dir/main.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/main.cpp"
 
 CMakeFiles/book_my_show.dir/main.cpp.i: cmake_force
@@ -155,6 +169,7 @@ CMakeFiles/book_my_show.dir/main.cpp.s: cmake_force
 
 # Object files for target book_my_show
 book_my_show_OBJECTS = \
+"CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o" \
 "CMakeFiles/book_my_show.dir/src/BookingService.cpp.o" \
 "CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o" \
 "CMakeFiles/book_my_show.dir/src/SearchService.cpp.o" \
@@ -165,6 +180,7 @@ book_my_show_OBJECTS = \
 # External object files for target book_my_show
 book_my_show_EXTERNAL_OBJECTS =
 
+book_my_show: CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o
 book_my_show: CMakeFiles/book_my_show.dir/src/BookingService.cpp.o
 book_my_show: CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o
 book_my_show: CMakeFiles/book_my_show.dir/src/SearchService.cpp.o
@@ -173,7 +189,7 @@ book_my_show: CMakeFiles/book_my_show.dir/src/ShowService.cpp.o
 book_my_show: CMakeFiles/book_my_show.dir/main.cpp.o
 book_my_show: CMakeFiles/book_my_show.dir/build.make
 book_my_show: CMakeFiles/book_my_show.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable book_my_show"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable book_my_show"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/book_my_show.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

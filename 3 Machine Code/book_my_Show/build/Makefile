@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/BookMyShowManager.o: src/BookMyShowManager.cpp.o
+.PHONY : src/BookMyShowManager.o
+
+# target to build an object file
+src/BookMyShowManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o
+.PHONY : src/BookMyShowManager.cpp.o
+
+src/BookMyShowManager.i: src/BookMyShowManager.cpp.i
+.PHONY : src/BookMyShowManager.i
+
+# target to preprocess a source file
+src/BookMyShowManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.i
+.PHONY : src/BookMyShowManager.cpp.i
+
+src/BookMyShowManager.s: src/BookMyShowManager.cpp.s
+.PHONY : src/BookMyShowManager.s
+
+# target to generate assembly for a file
+src/BookMyShowManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.s
+.PHONY : src/BookMyShowManager.cpp.s
+
 src/BookingService.o: src/BookingService.cpp.o
 .PHONY : src/BookingService.o
 
@@ -285,6 +309,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/BookMyShowManager.o"
+	@echo "... src/BookMyShowManager.i"
+	@echo "... src/BookMyShowManager.s"
 	@echo "... src/BookingService.o"
 	@echo "... src/BookingService.i"
 	@echo "... src/BookingService.s"

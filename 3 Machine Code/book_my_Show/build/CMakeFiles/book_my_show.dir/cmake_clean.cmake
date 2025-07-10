@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/book_my_show.dir/main.cpp.o"
   "CMakeFiles/book_my_show.dir/main.cpp.o.d"
+  "CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o"
+  "CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o.d"
   "CMakeFiles/book_my_show.dir/src/BookingService.cpp.o"
   "CMakeFiles/book_my_show.dir/src/BookingService.cpp.o.d"
   "CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o"

@@ -13,8 +13,10 @@ std::shared_ptr<Booking> BookingService::createBooking(
     const std::vector<std::shared_ptr<Seat>> &seats
 ){
     for (const auto &seat : seats){
-        if (!seatLockManager->isSeatLockedByUser(seat, user)) {
-            throw std::runtime_error("Seat not locked by user: " + seat->getId());
+        if (!seatLockManager->isSeatLocked(seat)) {
+            seatLockManager->lockSeat(seat, user);
+        } else if(!seatLockManager->isSeatLockedByUser(seat, user)){
+            throw std::runtime_error("Seat already locked by another user: " + std::to_string(seat->getId()));
         }
 
     }
