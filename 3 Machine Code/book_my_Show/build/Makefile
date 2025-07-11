@@ -225,6 +225,78 @@ src/PaymentService.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/PaymentService.cpp.s
 .PHONY : src/PaymentService.cpp.s
 
+src/RetryQueueManager.o: src/RetryQueueManager.cpp.o
+.PHONY : src/RetryQueueManager.o
+
+# target to build an object file
+src/RetryQueueManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/RetryQueueManager.cpp.o
+.PHONY : src/RetryQueueManager.cpp.o
+
+src/RetryQueueManager.i: src/RetryQueueManager.cpp.i
+.PHONY : src/RetryQueueManager.i
+
+# target to preprocess a source file
+src/RetryQueueManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/RetryQueueManager.cpp.i
+.PHONY : src/RetryQueueManager.cpp.i
+
+src/RetryQueueManager.s: src/RetryQueueManager.cpp.s
+.PHONY : src/RetryQueueManager.s
+
+# target to generate assembly for a file
+src/RetryQueueManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/RetryQueueManager.cpp.s
+.PHONY : src/RetryQueueManager.cpp.s
+
+src/RetryTask.o: src/RetryTask.cpp.o
+.PHONY : src/RetryTask.o
+
+# target to build an object file
+src/RetryTask.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/RetryTask.cpp.o
+.PHONY : src/RetryTask.cpp.o
+
+src/RetryTask.i: src/RetryTask.cpp.i
+.PHONY : src/RetryTask.i
+
+# target to preprocess a source file
+src/RetryTask.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/RetryTask.cpp.i
+.PHONY : src/RetryTask.cpp.i
+
+src/RetryTask.s: src/RetryTask.cpp.s
+.PHONY : src/RetryTask.s
+
+# target to generate assembly for a file
+src/RetryTask.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/RetryTask.cpp.s
+.PHONY : src/RetryTask.cpp.s
+
+src/RetryWorker.o: src/RetryWorker.cpp.o
+.PHONY : src/RetryWorker.o
+
+# target to build an object file
+src/RetryWorker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/RetryWorker.cpp.o
+.PHONY : src/RetryWorker.cpp.o
+
+src/RetryWorker.i: src/RetryWorker.cpp.i
+.PHONY : src/RetryWorker.i
+
+# target to preprocess a source file
+src/RetryWorker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/RetryWorker.cpp.i
+.PHONY : src/RetryWorker.cpp.i
+
+src/RetryWorker.s: src/RetryWorker.cpp.s
+.PHONY : src/RetryWorker.s
+
+# target to generate assembly for a file
+src/RetryWorker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/RetryWorker.cpp.s
+.PHONY : src/RetryWorker.cpp.s
+
 src/SearchService.o: src/SearchService.cpp.o
 .PHONY : src/SearchService.o
 
@@ -366,6 +438,15 @@ help:
 	@echo "... src/PaymentService.o"
 	@echo "... src/PaymentService.i"
 	@echo "... src/PaymentService.s"
+	@echo "... src/RetryQueueManager.o"
+	@echo "... src/RetryQueueManager.i"
+	@echo "... src/RetryQueueManager.s"
+	@echo "... src/RetryTask.o"
+	@echo "... src/RetryTask.i"
+	@echo "... src/RetryTask.s"
+	@echo "... src/RetryWorker.o"
+	@echo "... src/RetryWorker.i"
+	@echo "... src/RetryWorker.s"
 	@echo "... src/SearchService.o"
 	@echo "... src/SearchService.i"
 	@echo "... src/SearchService.s"

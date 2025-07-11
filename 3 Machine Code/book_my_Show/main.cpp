@@ -18,17 +18,27 @@
 
 // #include "services/BookMyShowManager.hpp"
 
+// #include <iostream>
+// #include <memory>
+// #include <vector>
+// #include <chrono>
+
+// #include "admin/AdminPanel.hpp"
+// #include "admin/DatabaseSimulator.hpp"
+// #include "models/User.hpp"
+// #include "enums/EventType.hpp"
+// #include "services/BookMyShowManager.hpp"
+// #include "models/Seat.hpp"
+
+
 #include <iostream>
-#include <memory>
-#include <vector>
+#include <thread>
 #include <chrono>
 
-#include "admin/AdminPanel.hpp"
-#include "admin/DatabaseSimulator.hpp"
-#include "models/User.hpp"
-#include "enums/EventType.hpp"
-#include "services/BookMyShowManager.hpp"
 #include "models/Seat.hpp"
+#include "models/User.hpp"
+#include "services/BookMyShowManager.hpp"
+#include "services/RetryWorker.hpp"
 
 int main() {
 
@@ -154,46 +164,87 @@ int main() {
 
 
 
-    // 3rd phase
+    // // 3rd phase
 
-    auto db = std::make_shared<DatabaseSimulator>();
+    // auto db = std::make_shared<DatabaseSimulator>();
 
-    AdminPanel admin(db);
+    // AdminPanel admin(db);
     
-     auto city = admin.addCity(1, "Bangalore");
-    auto theatre = admin.addTheatre(1, "PVR Orion", city);
-    auto screen = admin.addScreen(1, "Screen 1", theatre);
+    // auto city = admin.addCity(1, "Bangalore");
+    // auto theatre = admin.addTheatre(1, "PVR Orion", city);
+    // auto screen = admin.addScreen(1, "Screen 1", theatre);
 
-    auto seat1 = admin.addSeat(101, "A1", SeatType::REGULAR, screen);
-    auto seat2 = admin.addSeat(102, "A2", SeatType::REGULAR, screen);
-    auto seat3 = admin.addSeat(103, "A3", SeatType::REGULAR, screen);
+    // auto seat1 = admin.addSeat(101, "A1", SeatType::REGULAR, screen);
+    // auto seat2 = admin.addSeat(102, "A2", SeatType::REGULAR, screen);
+    // auto seat3 = admin.addSeat(103, "A3", SeatType::REGULAR, screen);
 
-    // Add Event (Movie)
-    auto movie = admin.addMovie(1, "Interstellar", "Space-time odyssey", 169, "English",
-                                {"Matthew McConaughey", "Anne Hathaway"}, "Sci-Fi");
+    // // Add Event (Movie)
+    // auto movie = admin.addMovie(1, "Interstellar", "Space-time odyssey", 169, "English",
+    //                             {"Matthew McConaughey", "Anne Hathaway"}, "Sci-Fi");
 
-    // Add Show
-    auto show = admin.addShow(1, movie, theatre, screen, std::chrono::system_clock::now());
+    // // Add Show
+    // auto show = admin.addShow(1, movie, theatre, screen, std::chrono::system_clock::now());
 
-    // 2. Init BookMyShow System
-    auto bms = BookMyShowManager::getInstance();
+    // // 2. Init BookMyShow System
+    // auto bms = BookMyShowManager::getInstance();
 
 
-    bms->initializeFromDatabase(db);
+    // bms->initializeFromDatabase(db);
     
-     auto user = bms->createUser("Raj");
+    //  auto user = bms->createUser("Raj");
 
-    // 4. Search
-    std::cout << "🎬 Searching shows in Bangalore...\n";
-    for (const auto& s : bms->searchShowsByCity("Bangalore")) {
-        std::cout << "Show ID: " << s->getId() << ", Movie: " << s->getEvent()->getName() << "\n";
+    // // 4. Search
+    // std::cout << "🎬 Searching shows in Bangalore...\n";
+    // for (const auto& s : bms->searchShowsByCity("Bangalore")) {
+    //     std::cout << "Show ID: " << s->getId() << ", Movie: " << s->getEvent()->getName() << "\n";
+    // }
+
+    // // 5. Book Ticket
+    // try {
+    //     auto booking = bms->bookTickets(user->getId(), show->getId(), {seat1->getId(), seat2->getId()});
+    //     std::cout << "[✅] Booking Success! Booking ID: " << booking->getId() << "\n";
+    // } catch (const std::exception& e) {
+    //     std::cerr << "[❌] Booking Failed: " << e.what() << "\n";
+    // }
+
+    // 4th phase
+    auto manager = BookMyShowManager::getInstance();
+
+    // 1. Initialize system data
+    manager->initialize();
+
+    // 2. Start the retry worker (for failed payments)
+    RetryWorker retryWorker(manager->getRetryQueueManager());
+    retryWorker.start();
+
+    // 3. Create a user
+    auto user = manager->createUser("Raj");
+
+    // 4. Search for a show
+    auto shows = manager->searchShowsByCity("Deoghar");
+    if (shows.empty()) {
+        std::cerr << "[ERROR] No shows found in the city.\n";
+        return 1;
     }
 
-    // 5. Book Ticket
+    auto selectedShow = shows.front();
+    std::cout << "[INFO] Found show: " << selectedShow->getEvent()->getName() << "\n";
+
+    // 5. Book tickets
     try {
-        auto booking = bms->bookTickets(user->getId(), show->getId(), {seat1->getId(), seat2->getId()});
-        std::cout << "[✅] Booking Success! Booking ID: " << booking->getId() << "\n";
-    } catch (const std::exception& e) {
-        std::cerr << "[❌] Booking Failed: " << e.what() << "\n";
+        std::vector<int> seatIds = {101};  // Trying to book Seat A1
+        auto booking = manager->bookTickets(user->getId(), selectedShow->getId(), seatIds);
+
+        std::cout << "[BOOKING] Booking ID: " << booking->getId()
+                  << ", Status: " << static_cast<int>(booking->getStatus()) << "\n";
+    } catch (const std::exception& ex) {
+        std::cerr << "[ERROR] Booking failed: " << ex.what() << "\n";
     }
+
+    // 6. Simulate system running (to give retry worker time to process retries)
+    std::this_thread::sleep_for(std::chrono::seconds(10));
+
+    // 7. Stop retry worker before exit
+    retryWorker.stop();
+
 }

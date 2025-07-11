@@ -21,7 +21,7 @@ std::shared_ptr<Booking> BookingService::createBooking(
 
     }
 
-    auto booking = std::make_shared<Booking>(++bookingId, user, show, seats, BookingStatus::CONFIRMED);
+    auto booking = std::make_shared<Booking>(++bookingId, user, show, seats, BookingStatus::PENDING);
 
     bookings.push_back(booking);
 

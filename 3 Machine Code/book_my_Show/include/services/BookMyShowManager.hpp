@@ -15,6 +15,7 @@
 #include "services/BookingService.hpp"
 #include "services/PaymentService.hpp"
 #include "services/SeatLockManager.hpp"
+#include "services/RetryQueueManager.hpp"
 
 #include "../admin/DatabaseSimulator.hpp"
 
@@ -30,6 +31,8 @@ private:
     std::shared_ptr<BookingService> bookingService;
     std::shared_ptr<SeatLockManager> seatLockManager;
     std::shared_ptr<PaymentService> paymentService;
+    std::shared_ptr<RetryQueueManager> retryQueueManager;
+
 
     BookMyShowManager();
     BookMyShowManager(const BookMyShowManager &) = delete;
@@ -51,4 +54,7 @@ public:
 
     const std::vector<std::shared_ptr<City>>& getCities() const;
     const std::vector<std::shared_ptr<Show>>& getShows() const;
+
+    std::shared_ptr<RetryQueueManager> getRetryQueueManager() const;
+
 };

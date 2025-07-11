@@ -1,4 +1,8 @@
 #include "services/BookMyShowManager.hpp"
+#include "services/RetryWorker.hpp"
+#include "services/RetryQueueManager.hpp"
+
+#include "enums/BookingStatus.hpp"
 
 
 BookMyShowManager::BookMyShowManager() {
@@ -6,6 +10,8 @@ BookMyShowManager::BookMyShowManager() {
     auto seatLockManager = std::make_shared<SeatLockManager>(30);
     this->bookingService = std::make_shared<BookingService>(seatLockManager);
     this->paymentService = std::make_shared<PaymentService>();
+    this->retryQueueManager = std::make_shared<RetryQueueManager>();
+
 }
 
 std::shared_ptr<BookMyShowManager> BookMyShowManager::getInstance() {
@@ -85,7 +91,18 @@ std::shared_ptr<Booking> BookMyShowManager::bookTickets(int userId, int showId, 
         }
     }
 
-    return bookingService->createBooking(*user, *show, selectedSeats);
+    auto booking = bookingService->createBooking(*user, *show, selectedSeats);
+
+    double amount = selectedSeats.size() * 200.0; // mock price
+    bool paymentSuccess = paymentService->processPayment(userId, amount);
+    
+    if(paymentSuccess) {
+        booking->confirm();
+    } else {
+        retryQueueManager->enqueue(std::make_shared<RetryTask>(*user, *show, selectedSeats, bookingService, paymentService));
+    }
+
+    return booking;
 }
 
 const std::vector<std::shared_ptr<City>>& BookMyShowManager::getCities() const {
@@ -95,3 +112,8 @@ const std::vector<std::shared_ptr<City>>& BookMyShowManager::getCities() const {
 const std::vector<std::shared_ptr<Show>>& BookMyShowManager::getShows() const {
     return shows;
 }
+
+std::shared_ptr<RetryQueueManager> BookMyShowManager::getRetryQueueManager() const {
+    return retryQueueManager;
+}
+
