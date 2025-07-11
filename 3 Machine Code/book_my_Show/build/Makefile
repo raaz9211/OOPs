@@ -297,6 +297,54 @@ src/ShowService.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/ShowService.cpp.s
 .PHONY : src/ShowService.cpp.s
 
+src/admin/AdminPanel.o: src/admin/AdminPanel.cpp.o
+.PHONY : src/admin/AdminPanel.o
+
+# target to build an object file
+src/admin/AdminPanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o
+.PHONY : src/admin/AdminPanel.cpp.o
+
+src/admin/AdminPanel.i: src/admin/AdminPanel.cpp.i
+.PHONY : src/admin/AdminPanel.i
+
+# target to preprocess a source file
+src/admin/AdminPanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.i
+.PHONY : src/admin/AdminPanel.cpp.i
+
+src/admin/AdminPanel.s: src/admin/AdminPanel.cpp.s
+.PHONY : src/admin/AdminPanel.s
+
+# target to generate assembly for a file
+src/admin/AdminPanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.s
+.PHONY : src/admin/AdminPanel.cpp.s
+
+src/admin/DatabaseSimulator.o: src/admin/DatabaseSimulator.cpp.o
+.PHONY : src/admin/DatabaseSimulator.o
+
+# target to build an object file
+src/admin/DatabaseSimulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o
+.PHONY : src/admin/DatabaseSimulator.cpp.o
+
+src/admin/DatabaseSimulator.i: src/admin/DatabaseSimulator.cpp.i
+.PHONY : src/admin/DatabaseSimulator.i
+
+# target to preprocess a source file
+src/admin/DatabaseSimulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.i
+.PHONY : src/admin/DatabaseSimulator.cpp.i
+
+src/admin/DatabaseSimulator.s: src/admin/DatabaseSimulator.cpp.s
+.PHONY : src/admin/DatabaseSimulator.s
+
+# target to generate assembly for a file
+src/admin/DatabaseSimulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_my_show.dir/build.make CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.s
+.PHONY : src/admin/DatabaseSimulator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -327,6 +375,12 @@ help:
 	@echo "... src/ShowService.o"
 	@echo "... src/ShowService.i"
 	@echo "... src/ShowService.s"
+	@echo "... src/admin/AdminPanel.o"
+	@echo "... src/admin/AdminPanel.i"
+	@echo "... src/admin/AdminPanel.s"
+	@echo "... src/admin/DatabaseSimulator.o"
+	@echo "... src/admin/DatabaseSimulator.i"
+	@echo "... src/admin/DatabaseSimulator.s"
 .PHONY : help
 
 

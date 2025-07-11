@@ -16,6 +16,9 @@
 #include "services/PaymentService.hpp"
 #include "services/SeatLockManager.hpp"
 
+#include "../admin/DatabaseSimulator.hpp"
+
+
 class BookMyShowManager {
 private:
     std::vector<std::shared_ptr<City>> cities;
@@ -35,8 +38,9 @@ private:
 public:
 
     static std::shared_ptr<BookMyShowManager> getInstance();
-
     void initialize();
+    void initializeFromDatabase(const std::shared_ptr<DatabaseSimulator>& db);
+
 
     std::shared_ptr<User> createUser(const std::string &name);
 

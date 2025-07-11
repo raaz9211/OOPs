@@ -153,10 +153,38 @@ CMakeFiles/book_my_show.dir/src/ShowService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/book_my_show.dir/src/ShowService.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/ShowService.cpp" -o CMakeFiles/book_my_show.dir/src/ShowService.cpp.s
 
+CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o: CMakeFiles/book_my_show.dir/flags.make
+CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/admin/AdminPanel.cpp
+CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o: CMakeFiles/book_my_show.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o -MF CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o.d -o CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/admin/AdminPanel.cpp"
+
+CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/admin/AdminPanel.cpp" > CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.i
+
+CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/admin/AdminPanel.cpp" -o CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.s
+
+CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o: CMakeFiles/book_my_show.dir/flags.make
+CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/admin/DatabaseSimulator.cpp
+CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o: CMakeFiles/book_my_show.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o -MF CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o.d -o CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/admin/DatabaseSimulator.cpp"
+
+CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/admin/DatabaseSimulator.cpp" > CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.i
+
+CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/admin/DatabaseSimulator.cpp" -o CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.s
+
 CMakeFiles/book_my_show.dir/main.cpp.o: CMakeFiles/book_my_show.dir/flags.make
 CMakeFiles/book_my_show.dir/main.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/main.cpp
 CMakeFiles/book_my_show.dir/main.cpp.o: CMakeFiles/book_my_show.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/book_my_show.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/book_my_show.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_my_show.dir/main.cpp.o -MF CMakeFiles/book_my_show.dir/main.cpp.o.d -o CMakeFiles/book_my_show.dir/main.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/main.cpp"
 
 CMakeFiles/book_my_show.dir/main.cpp.i: cmake_force
@@ -175,6 +203,8 @@ book_my_show_OBJECTS = \
 "CMakeFiles/book_my_show.dir/src/SearchService.cpp.o" \
 "CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o" \
 "CMakeFiles/book_my_show.dir/src/ShowService.cpp.o" \
+"CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o" \
+"CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o" \
 "CMakeFiles/book_my_show.dir/main.cpp.o"
 
 # External object files for target book_my_show
@@ -186,10 +216,12 @@ book_my_show: CMakeFiles/book_my_show.dir/src/PaymentService.cpp.o
 book_my_show: CMakeFiles/book_my_show.dir/src/SearchService.cpp.o
 book_my_show: CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o
 book_my_show: CMakeFiles/book_my_show.dir/src/ShowService.cpp.o
+book_my_show: CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o
+book_my_show: CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o
 book_my_show: CMakeFiles/book_my_show.dir/main.cpp.o
 book_my_show: CMakeFiles/book_my_show.dir/build.make
 book_my_show: CMakeFiles/book_my_show.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable book_my_show"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable book_my_show"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/book_my_show.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

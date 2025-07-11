@@ -15,6 +15,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/SearchService.cpp" "CMakeFiles/book_my_show.dir/src/SearchService.cpp.o" "gcc" "CMakeFiles/book_my_show.dir/src/SearchService.cpp.o.d"
   "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/SeatLockManager.cpp" "CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o" "gcc" "CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o.d"
   "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/ShowService.cpp" "CMakeFiles/book_my_show.dir/src/ShowService.cpp.o" "gcc" "CMakeFiles/book_my_show.dir/src/ShowService.cpp.o.d"
+  "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/admin/AdminPanel.cpp" "CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o" "gcc" "CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o.d"
+  "/home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/src/admin/DatabaseSimulator.cpp" "CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o" "gcc" "CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

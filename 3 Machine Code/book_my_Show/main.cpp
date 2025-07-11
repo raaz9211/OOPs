@@ -16,8 +16,19 @@
 // #include "services/ShowService.hpp"
 // #include "services/PaymentService.hpp"
 
-#include "services/BookMyShowManager.hpp"
+// #include "services/BookMyShowManager.hpp"
 
+#include <iostream>
+#include <memory>
+#include <vector>
+#include <chrono>
+
+#include "admin/AdminPanel.hpp"
+#include "admin/DatabaseSimulator.hpp"
+#include "models/User.hpp"
+#include "enums/EventType.hpp"
+#include "services/BookMyShowManager.hpp"
+#include "models/Seat.hpp"
 
 int main() {
 
@@ -100,43 +111,89 @@ int main() {
     // std::cout << "\n";
 
 
-    auto manager = BookMyShowManager::getInstance();
+//     // 2nd phase
+//     auto manager = BookMyShowManager::getInstance();
 
-    manager->initialize();
+//     manager->initialize();
 
-    auto user = manager->createUser("Raj");
+//     auto user = manager->createUser("Raj");
 
-    auto cityName = "Deoghar";
-    auto showsInCity = manager->searchShowsByCity(cityName);
-    std::cout << "[INFO] Shows in city: " << cityName << "\n";
-    for (const auto& show : showsInCity) {
-        std::cout << "  Show ID: " << show->getId()
-                  << ", Event: " << show->getEvent()->getName()
-                  << ", Theatre: " << show->getTheatre()->getName()
-                  << ", Screen: " << show->getScreen()->getName() << "\n";
+//     auto cityName = "Deoghar";
+//     auto showsInCity = manager->searchShowsByCity(cityName);
+//     std::cout << "[INFO] Shows in city: " << cityName << "\n";
+//     for (const auto& show : showsInCity) {
+//         std::cout << "  Show ID: " << show->getId()
+//                   << ", Event: " << show->getEvent()->getName()
+//                   << ", Theatre: " << show->getTheatre()->getName()
+//                   << ", Screen: " << show->getScreen()->getName() << "\n";
+//     }
+
+//     // Step 4: Book ticket for the first show
+//     if (!showsInCity.empty()) {
+//         int showId = showsInCity.front()->getId();
+//         std::vector<int> seatIds = {101, 102};  // A1
+
+//         try {
+//             auto booking = manager->bookTickets(user->getId(), showId, seatIds);
+
+//  std::cout << "\n✅ Booking Successful!\n";
+//             std::cout << "  Booking ID: " << booking->getId() << "\n";
+//             std::cout << "  User: " << booking->getUser()->getName() << "\n";
+//             std::cout << "  Show: " << booking->getShow()->getEvent()->getName() << "\n";
+//             std::cout << "  Seats: ";
+//             for (const auto& seat : booking->getSeats()) {
+//                 std::cout << seat->getSeatNumber() << " ";
+//             }
+//             std::cout << "\n  Status: " << static_cast<int>(booking->getStatus()) << "\n";
+
+//         } catch (const std::exception& e) {
+//             std::cerr << "❌ Booking failed: " << e.what() << "\n";
+//         }
+//     }
+//     return 0;
+
+
+
+    // 3rd phase
+
+    auto db = std::make_shared<DatabaseSimulator>();
+
+    AdminPanel admin(db);
+    
+     auto city = admin.addCity(1, "Bangalore");
+    auto theatre = admin.addTheatre(1, "PVR Orion", city);
+    auto screen = admin.addScreen(1, "Screen 1", theatre);
+
+    auto seat1 = admin.addSeat(101, "A1", SeatType::REGULAR, screen);
+    auto seat2 = admin.addSeat(102, "A2", SeatType::REGULAR, screen);
+    auto seat3 = admin.addSeat(103, "A3", SeatType::REGULAR, screen);
+
+    // Add Event (Movie)
+    auto movie = admin.addMovie(1, "Interstellar", "Space-time odyssey", 169, "English",
+                                {"Matthew McConaughey", "Anne Hathaway"}, "Sci-Fi");
+
+    // Add Show
+    auto show = admin.addShow(1, movie, theatre, screen, std::chrono::system_clock::now());
+
+    // 2. Init BookMyShow System
+    auto bms = BookMyShowManager::getInstance();
+
+
+    bms->initializeFromDatabase(db);
+    
+     auto user = bms->createUser("Raj");
+
+    // 4. Search
+    std::cout << "🎬 Searching shows in Bangalore...\n";
+    for (const auto& s : bms->searchShowsByCity("Bangalore")) {
+        std::cout << "Show ID: " << s->getId() << ", Movie: " << s->getEvent()->getName() << "\n";
     }
 
-    // Step 4: Book ticket for the first show
-    if (!showsInCity.empty()) {
-        int showId = showsInCity.front()->getId();
-        std::vector<int> seatIds = {101, 102};  // A1
-
-        try {
-            auto booking = manager->bookTickets(user->getId(), showId, seatIds);
-
- std::cout << "\n✅ Booking Successful!\n";
-            std::cout << "  Booking ID: " << booking->getId() << "\n";
-            std::cout << "  User: " << booking->getUser()->getName() << "\n";
-            std::cout << "  Show: " << booking->getShow()->getEvent()->getName() << "\n";
-            std::cout << "  Seats: ";
-            for (const auto& seat : booking->getSeats()) {
-                std::cout << seat->getSeatNumber() << " ";
-            }
-            std::cout << "\n  Status: " << static_cast<int>(booking->getStatus()) << "\n";
-
-        } catch (const std::exception& e) {
-            std::cerr << "❌ Booking failed: " << e.what() << "\n";
-        }
+    // 5. Book Ticket
+    try {
+        auto booking = bms->bookTickets(user->getId(), show->getId(), {seat1->getId(), seat2->getId()});
+        std::cout << "[✅] Booking Success! Booking ID: " << booking->getId() << "\n";
+    } catch (const std::exception& e) {
+        std::cerr << "[❌] Booking Failed: " << e.what() << "\n";
     }
-    return 0;
 }

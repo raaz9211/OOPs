@@ -13,6 +13,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/book_my_show.dir/src/SeatLockManager.cpp.o.d"
   "CMakeFiles/book_my_show.dir/src/ShowService.cpp.o"
   "CMakeFiles/book_my_show.dir/src/ShowService.cpp.o.d"
+  "CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o"
+  "CMakeFiles/book_my_show.dir/src/admin/AdminPanel.cpp.o.d"
+  "CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o"
+  "CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o.d"
   "book_my_show"
   "book_my_show.pdb"
 )

@@ -4,11 +4,12 @@
 
 #include "Event.hpp"
 
-class Movie : public Event {
+class Concert : public Event {
 private:
     std::vector<std::string> artists;
     bool isVIPAvailable;
-    Movie(int id, const std::string &name, const std::string &description,
+public:
+    Concert(int id, const std::string &name, const std::string &description,
           int durationInMinutes, const std::string &language, EventType eventType,
           std::vector<std::string> artists, bool isVIPAvailable) 
           : Event(id, name, description, durationInMinutes, language, eventType),

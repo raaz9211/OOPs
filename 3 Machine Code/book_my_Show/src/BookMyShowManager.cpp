@@ -17,7 +17,6 @@ void BookMyShowManager::initialize() {
     auto city = std::make_shared<City>(1, "Deoghar");
     cities.push_back(city);
 
-
     auto screen = std::make_shared<Screen>(1, "Audi 1");
     screen->addSeat(std::make_shared<Seat>(101, "A1", SeatType::REGULAR));
     screen->addSeat(std::make_shared<Seat>(102, "A2", SeatType::REGULAR));
@@ -40,6 +39,16 @@ void BookMyShowManager::initialize() {
 
     this->searchService = std::make_shared<SearchService>(cities, theatres, shows);
 
+}
+
+
+// from DB
+void BookMyShowManager::initializeFromDatabase(const std::shared_ptr<DatabaseSimulator>& db) {
+    this->cities = db->getCities();
+    this->theatres = db->getTheatres();
+    this->shows = db->getShows();
+    // Rebuild search service with actual data
+    this->searchService = std::make_shared<SearchService>(cities, theatres, shows);
 }
 
 std::shared_ptr<User> BookMyShowManager::createUser(const std::string &name) {
