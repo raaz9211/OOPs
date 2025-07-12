@@ -16,6 +16,7 @@
 #include "services/PaymentService.hpp"
 #include "services/SeatLockManager.hpp"
 #include "services/RetryQueueManager.hpp"
+#include "services/DiscountStrategy.hpp"
 
 #include "../admin/DatabaseSimulator.hpp"
 
@@ -32,6 +33,7 @@ private:
     std::shared_ptr<SeatLockManager> seatLockManager;
     std::shared_ptr<PaymentService> paymentService;
     std::shared_ptr<RetryQueueManager> retryQueueManager;
+    std::shared_ptr<DiscountStrategy> discountStrategy;
 
 
     BookMyShowManager();

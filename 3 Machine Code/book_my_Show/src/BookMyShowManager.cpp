@@ -1,6 +1,7 @@
 #include "services/BookMyShowManager.hpp"
 #include "services/RetryWorker.hpp"
 #include "services/RetryQueueManager.hpp"
+#include "services/FlatDiscount.hpp"
 
 #include "enums/BookingStatus.hpp"
 
@@ -94,7 +95,10 @@ std::shared_ptr<Booking> BookMyShowManager::bookTickets(int userId, int showId, 
     auto booking = bookingService->createBooking(*user, *show, selectedSeats);
 
     double amount = selectedSeats.size() * 200.0; // mock price
-    bool paymentSuccess = paymentService->processPayment(userId, amount);
+    discountStrategy = std::make_shared<FlatDiscount>();
+    double discountedAmount = discountStrategy ? discountStrategy->applyDiscount(amount) : amount;
+
+    bool paymentSuccess = paymentService->processPayment(userId, discountedAmount);
     
     if(paymentSuccess) {
         booking->confirm();

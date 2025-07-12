@@ -316,6 +316,8 @@ CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o: /home/raaz/Programming/
   /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/models/User.hpp \
   /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/services/BookMyShowManager.hpp \
   /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/services/BookingService.hpp \
+  /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/services/DiscountStrategy.hpp \
+  /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/services/FlatDiscount.hpp \
   /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/services/PaymentService.hpp \
   /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/services/RetryQueueManager.hpp \
   /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/services/RetryWorker.hpp \
@@ -3013,6 +3015,8 @@ CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o: /home/raaz/Progra
 
 /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/PaymentService.cpp:
 
+/home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/services/FlatDiscount.hpp:
+
 /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/BookMyShowManager.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
@@ -3314,6 +3318,8 @@ CMakeFiles/book_my_show.dir/src/admin/DatabaseSimulator.cpp.o: /home/raaz/Progra
 /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/src/SearchService.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/services/DiscountStrategy.hpp:
 
 /home/raaz/Programming/OOPs/3\ Machine\ Code/book_my_Show/include/models/SeatLock.hpp:
 

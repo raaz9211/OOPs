@@ -318,6 +318,8 @@ CMakeFiles/book_my_show.dir/src/BookMyShowManager.cpp.o
  /home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/include/models/User.hpp
  /home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/include/services/BookMyShowManager.hpp
  /home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/include/services/BookingService.hpp
+ /home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/include/services/DiscountStrategy.hpp
+ /home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/include/services/FlatDiscount.hpp
  /home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/include/services/PaymentService.hpp
  /home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/include/services/RetryQueueManager.hpp
  /home/raaz/Programming/OOPs/3 Machine Code/book_my_Show/include/services/RetryWorker.hpp
