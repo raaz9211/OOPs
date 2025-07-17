@@ -153,53 +153,389 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/Location.o: src/Location.cpp.o
-.PHONY : src/Location.o
+src/models/Cab.o: src/models/Cab.cpp.o
+.PHONY : src/models/Cab.o
 
 # target to build an object file
-src/Location.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/Location.cpp.o
-.PHONY : src/Location.cpp.o
+src/models/Cab.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Cab.cpp.o
+.PHONY : src/models/Cab.cpp.o
 
-src/Location.i: src/Location.cpp.i
-.PHONY : src/Location.i
+src/models/Cab.i: src/models/Cab.cpp.i
+.PHONY : src/models/Cab.i
 
 # target to preprocess a source file
-src/Location.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/Location.cpp.i
-.PHONY : src/Location.cpp.i
+src/models/Cab.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Cab.cpp.i
+.PHONY : src/models/Cab.cpp.i
 
-src/Location.s: src/Location.cpp.s
-.PHONY : src/Location.s
+src/models/Cab.s: src/models/Cab.cpp.s
+.PHONY : src/models/Cab.s
 
 # target to generate assembly for a file
-src/Location.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/Location.cpp.s
-.PHONY : src/Location.cpp.s
+src/models/Cab.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Cab.cpp.s
+.PHONY : src/models/Cab.cpp.s
 
-src/User.o: src/User.cpp.o
-.PHONY : src/User.o
+src/models/Driver.o: src/models/Driver.cpp.o
+.PHONY : src/models/Driver.o
 
 # target to build an object file
-src/User.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/User.cpp.o
-.PHONY : src/User.cpp.o
+src/models/Driver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Driver.cpp.o
+.PHONY : src/models/Driver.cpp.o
 
-src/User.i: src/User.cpp.i
-.PHONY : src/User.i
+src/models/Driver.i: src/models/Driver.cpp.i
+.PHONY : src/models/Driver.i
 
 # target to preprocess a source file
-src/User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/User.cpp.i
-.PHONY : src/User.cpp.i
+src/models/Driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Driver.cpp.i
+.PHONY : src/models/Driver.cpp.i
 
-src/User.s: src/User.cpp.s
-.PHONY : src/User.s
+src/models/Driver.s: src/models/Driver.cpp.s
+.PHONY : src/models/Driver.s
 
 # target to generate assembly for a file
-src/User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/User.cpp.s
-.PHONY : src/User.cpp.s
+src/models/Driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Driver.cpp.s
+.PHONY : src/models/Driver.cpp.s
+
+src/models/Location.o: src/models/Location.cpp.o
+.PHONY : src/models/Location.o
+
+# target to build an object file
+src/models/Location.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Location.cpp.o
+.PHONY : src/models/Location.cpp.o
+
+src/models/Location.i: src/models/Location.cpp.i
+.PHONY : src/models/Location.i
+
+# target to preprocess a source file
+src/models/Location.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Location.cpp.i
+.PHONY : src/models/Location.cpp.i
+
+src/models/Location.s: src/models/Location.cpp.s
+.PHONY : src/models/Location.s
+
+# target to generate assembly for a file
+src/models/Location.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Location.cpp.s
+.PHONY : src/models/Location.cpp.s
+
+src/models/Rating.o: src/models/Rating.cpp.o
+.PHONY : src/models/Rating.o
+
+# target to build an object file
+src/models/Rating.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Rating.cpp.o
+.PHONY : src/models/Rating.cpp.o
+
+src/models/Rating.i: src/models/Rating.cpp.i
+.PHONY : src/models/Rating.i
+
+# target to preprocess a source file
+src/models/Rating.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Rating.cpp.i
+.PHONY : src/models/Rating.cpp.i
+
+src/models/Rating.s: src/models/Rating.cpp.s
+.PHONY : src/models/Rating.s
+
+# target to generate assembly for a file
+src/models/Rating.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Rating.cpp.s
+.PHONY : src/models/Rating.cpp.s
+
+src/models/Ride.o: src/models/Ride.cpp.o
+.PHONY : src/models/Ride.o
+
+# target to build an object file
+src/models/Ride.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Ride.cpp.o
+.PHONY : src/models/Ride.cpp.o
+
+src/models/Ride.i: src/models/Ride.cpp.i
+.PHONY : src/models/Ride.i
+
+# target to preprocess a source file
+src/models/Ride.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Ride.cpp.i
+.PHONY : src/models/Ride.cpp.i
+
+src/models/Ride.s: src/models/Ride.cpp.s
+.PHONY : src/models/Ride.s
+
+# target to generate assembly for a file
+src/models/Ride.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Ride.cpp.s
+.PHONY : src/models/Ride.cpp.s
+
+src/models/Rider.o: src/models/Rider.cpp.o
+.PHONY : src/models/Rider.o
+
+# target to build an object file
+src/models/Rider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Rider.cpp.o
+.PHONY : src/models/Rider.cpp.o
+
+src/models/Rider.i: src/models/Rider.cpp.i
+.PHONY : src/models/Rider.i
+
+# target to preprocess a source file
+src/models/Rider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Rider.cpp.i
+.PHONY : src/models/Rider.cpp.i
+
+src/models/Rider.s: src/models/Rider.cpp.s
+.PHONY : src/models/Rider.s
+
+# target to generate assembly for a file
+src/models/Rider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/Rider.cpp.s
+.PHONY : src/models/Rider.cpp.s
+
+src/models/User.o: src/models/User.cpp.o
+.PHONY : src/models/User.o
+
+# target to build an object file
+src/models/User.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/User.cpp.o
+.PHONY : src/models/User.cpp.o
+
+src/models/User.i: src/models/User.cpp.i
+.PHONY : src/models/User.i
+
+# target to preprocess a source file
+src/models/User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/User.cpp.i
+.PHONY : src/models/User.cpp.i
+
+src/models/User.s: src/models/User.cpp.s
+.PHONY : src/models/User.s
+
+# target to generate assembly for a file
+src/models/User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/models/User.cpp.s
+.PHONY : src/models/User.cpp.s
+
+src/services/CabBookingManager.o: src/services/CabBookingManager.cpp.o
+.PHONY : src/services/CabBookingManager.o
+
+# target to build an object file
+src/services/CabBookingManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/CabBookingManager.cpp.o
+.PHONY : src/services/CabBookingManager.cpp.o
+
+src/services/CabBookingManager.i: src/services/CabBookingManager.cpp.i
+.PHONY : src/services/CabBookingManager.i
+
+# target to preprocess a source file
+src/services/CabBookingManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/CabBookingManager.cpp.i
+.PHONY : src/services/CabBookingManager.cpp.i
+
+src/services/CabBookingManager.s: src/services/CabBookingManager.cpp.s
+.PHONY : src/services/CabBookingManager.s
+
+# target to generate assembly for a file
+src/services/CabBookingManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/CabBookingManager.cpp.s
+.PHONY : src/services/CabBookingManager.cpp.s
+
+src/services/DefaultPricingStrategy.o: src/services/DefaultPricingStrategy.cpp.o
+.PHONY : src/services/DefaultPricingStrategy.o
+
+# target to build an object file
+src/services/DefaultPricingStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/DefaultPricingStrategy.cpp.o
+.PHONY : src/services/DefaultPricingStrategy.cpp.o
+
+src/services/DefaultPricingStrategy.i: src/services/DefaultPricingStrategy.cpp.i
+.PHONY : src/services/DefaultPricingStrategy.i
+
+# target to preprocess a source file
+src/services/DefaultPricingStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/DefaultPricingStrategy.cpp.i
+.PHONY : src/services/DefaultPricingStrategy.cpp.i
+
+src/services/DefaultPricingStrategy.s: src/services/DefaultPricingStrategy.cpp.s
+.PHONY : src/services/DefaultPricingStrategy.s
+
+# target to generate assembly for a file
+src/services/DefaultPricingStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/DefaultPricingStrategy.cpp.s
+.PHONY : src/services/DefaultPricingStrategy.cpp.s
+
+src/services/DriverLocationService.o: src/services/DriverLocationService.cpp.o
+.PHONY : src/services/DriverLocationService.o
+
+# target to build an object file
+src/services/DriverLocationService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/DriverLocationService.cpp.o
+.PHONY : src/services/DriverLocationService.cpp.o
+
+src/services/DriverLocationService.i: src/services/DriverLocationService.cpp.i
+.PHONY : src/services/DriverLocationService.i
+
+# target to preprocess a source file
+src/services/DriverLocationService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/DriverLocationService.cpp.i
+.PHONY : src/services/DriverLocationService.cpp.i
+
+src/services/DriverLocationService.s: src/services/DriverLocationService.cpp.s
+.PHONY : src/services/DriverLocationService.s
+
+# target to generate assembly for a file
+src/services/DriverLocationService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/DriverLocationService.cpp.s
+.PHONY : src/services/DriverLocationService.cpp.s
+
+src/services/DriverService.o: src/services/DriverService.cpp.o
+.PHONY : src/services/DriverService.o
+
+# target to build an object file
+src/services/DriverService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/DriverService.cpp.o
+.PHONY : src/services/DriverService.cpp.o
+
+src/services/DriverService.i: src/services/DriverService.cpp.i
+.PHONY : src/services/DriverService.i
+
+# target to preprocess a source file
+src/services/DriverService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/DriverService.cpp.i
+.PHONY : src/services/DriverService.cpp.i
+
+src/services/DriverService.s: src/services/DriverService.cpp.s
+.PHONY : src/services/DriverService.s
+
+# target to generate assembly for a file
+src/services/DriverService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/DriverService.cpp.s
+.PHONY : src/services/DriverService.cpp.s
+
+src/services/MatchingEngine.o: src/services/MatchingEngine.cpp.o
+.PHONY : src/services/MatchingEngine.o
+
+# target to build an object file
+src/services/MatchingEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/MatchingEngine.cpp.o
+.PHONY : src/services/MatchingEngine.cpp.o
+
+src/services/MatchingEngine.i: src/services/MatchingEngine.cpp.i
+.PHONY : src/services/MatchingEngine.i
+
+# target to preprocess a source file
+src/services/MatchingEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/MatchingEngine.cpp.i
+.PHONY : src/services/MatchingEngine.cpp.i
+
+src/services/MatchingEngine.s: src/services/MatchingEngine.cpp.s
+.PHONY : src/services/MatchingEngine.s
+
+# target to generate assembly for a file
+src/services/MatchingEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/MatchingEngine.cpp.s
+.PHONY : src/services/MatchingEngine.cpp.s
+
+src/services/NearestDriverStrategy.o: src/services/NearestDriverStrategy.cpp.o
+.PHONY : src/services/NearestDriverStrategy.o
+
+# target to build an object file
+src/services/NearestDriverStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/NearestDriverStrategy.cpp.o
+.PHONY : src/services/NearestDriverStrategy.cpp.o
+
+src/services/NearestDriverStrategy.i: src/services/NearestDriverStrategy.cpp.i
+.PHONY : src/services/NearestDriverStrategy.i
+
+# target to preprocess a source file
+src/services/NearestDriverStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/NearestDriverStrategy.cpp.i
+.PHONY : src/services/NearestDriverStrategy.cpp.i
+
+src/services/NearestDriverStrategy.s: src/services/NearestDriverStrategy.cpp.s
+.PHONY : src/services/NearestDriverStrategy.s
+
+# target to generate assembly for a file
+src/services/NearestDriverStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/NearestDriverStrategy.cpp.s
+.PHONY : src/services/NearestDriverStrategy.cpp.s
+
+src/services/RatingSystem.o: src/services/RatingSystem.cpp.o
+.PHONY : src/services/RatingSystem.o
+
+# target to build an object file
+src/services/RatingSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/RatingSystem.cpp.o
+.PHONY : src/services/RatingSystem.cpp.o
+
+src/services/RatingSystem.i: src/services/RatingSystem.cpp.i
+.PHONY : src/services/RatingSystem.i
+
+# target to preprocess a source file
+src/services/RatingSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/RatingSystem.cpp.i
+.PHONY : src/services/RatingSystem.cpp.i
+
+src/services/RatingSystem.s: src/services/RatingSystem.cpp.s
+.PHONY : src/services/RatingSystem.s
+
+# target to generate assembly for a file
+src/services/RatingSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/RatingSystem.cpp.s
+.PHONY : src/services/RatingSystem.cpp.s
+
+src/services/RideService.o: src/services/RideService.cpp.o
+.PHONY : src/services/RideService.o
+
+# target to build an object file
+src/services/RideService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/RideService.cpp.o
+.PHONY : src/services/RideService.cpp.o
+
+src/services/RideService.i: src/services/RideService.cpp.i
+.PHONY : src/services/RideService.i
+
+# target to preprocess a source file
+src/services/RideService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/RideService.cpp.i
+.PHONY : src/services/RideService.cpp.i
+
+src/services/RideService.s: src/services/RideService.cpp.s
+.PHONY : src/services/RideService.s
+
+# target to generate assembly for a file
+src/services/RideService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/RideService.cpp.s
+.PHONY : src/services/RideService.cpp.s
+
+src/services/RiderService.o: src/services/RiderService.cpp.o
+.PHONY : src/services/RiderService.o
+
+# target to build an object file
+src/services/RiderService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/RiderService.cpp.o
+.PHONY : src/services/RiderService.cpp.o
+
+src/services/RiderService.i: src/services/RiderService.cpp.i
+.PHONY : src/services/RiderService.i
+
+# target to preprocess a source file
+src/services/RiderService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/RiderService.cpp.i
+.PHONY : src/services/RiderService.cpp.i
+
+src/services/RiderService.s: src/services/RiderService.cpp.s
+.PHONY : src/services/RiderService.s
+
+# target to generate assembly for a file
+src/services/RiderService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cab_booking_system.dir/build.make CMakeFiles/cab_booking_system.dir/src/services/RiderService.cpp.s
+.PHONY : src/services/RiderService.cpp.s
 
 # Help Target
 help:
@@ -213,12 +549,54 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/Location.o"
-	@echo "... src/Location.i"
-	@echo "... src/Location.s"
-	@echo "... src/User.o"
-	@echo "... src/User.i"
-	@echo "... src/User.s"
+	@echo "... src/models/Cab.o"
+	@echo "... src/models/Cab.i"
+	@echo "... src/models/Cab.s"
+	@echo "... src/models/Driver.o"
+	@echo "... src/models/Driver.i"
+	@echo "... src/models/Driver.s"
+	@echo "... src/models/Location.o"
+	@echo "... src/models/Location.i"
+	@echo "... src/models/Location.s"
+	@echo "... src/models/Rating.o"
+	@echo "... src/models/Rating.i"
+	@echo "... src/models/Rating.s"
+	@echo "... src/models/Ride.o"
+	@echo "... src/models/Ride.i"
+	@echo "... src/models/Ride.s"
+	@echo "... src/models/Rider.o"
+	@echo "... src/models/Rider.i"
+	@echo "... src/models/Rider.s"
+	@echo "... src/models/User.o"
+	@echo "... src/models/User.i"
+	@echo "... src/models/User.s"
+	@echo "... src/services/CabBookingManager.o"
+	@echo "... src/services/CabBookingManager.i"
+	@echo "... src/services/CabBookingManager.s"
+	@echo "... src/services/DefaultPricingStrategy.o"
+	@echo "... src/services/DefaultPricingStrategy.i"
+	@echo "... src/services/DefaultPricingStrategy.s"
+	@echo "... src/services/DriverLocationService.o"
+	@echo "... src/services/DriverLocationService.i"
+	@echo "... src/services/DriverLocationService.s"
+	@echo "... src/services/DriverService.o"
+	@echo "... src/services/DriverService.i"
+	@echo "... src/services/DriverService.s"
+	@echo "... src/services/MatchingEngine.o"
+	@echo "... src/services/MatchingEngine.i"
+	@echo "... src/services/MatchingEngine.s"
+	@echo "... src/services/NearestDriverStrategy.o"
+	@echo "... src/services/NearestDriverStrategy.i"
+	@echo "... src/services/NearestDriverStrategy.s"
+	@echo "... src/services/RatingSystem.o"
+	@echo "... src/services/RatingSystem.i"
+	@echo "... src/services/RatingSystem.s"
+	@echo "... src/services/RideService.o"
+	@echo "... src/services/RideService.i"
+	@echo "... src/services/RideService.s"
+	@echo "... src/services/RiderService.o"
+	@echo "... src/services/RiderService.i"
+	@echo "... src/services/RiderService.s"
 .PHONY : help
 
 

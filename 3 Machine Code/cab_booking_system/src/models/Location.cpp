@@ -1,4 +1,5 @@
 #include <cmath>
+// #include <iostream>
 
 #include "models/Location.hpp"
 
@@ -15,9 +16,11 @@ double Location::getLongitude() const {
 }
 
 
-double Location::distanceTo(const Location &tocation) const {
-    double dx = this->latitude - latitude;
-    double dy = this->longitude - longitude;
+double Location::distanceTo(const Location &location) const {
+    double dx = this->latitude - location.getLatitude();
+    double dy = this->longitude - location.getLongitude();
+
+    // std::cout << dx << dy;
 
     return std::sqrt(dx * dx + dy * dy);
 }
