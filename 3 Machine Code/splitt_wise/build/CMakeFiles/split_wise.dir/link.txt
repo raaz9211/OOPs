@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/split_wise.dir/src/UserManager/User.cpp.o CMakeFiles/split_wise.dir/src/UserManager/UserRepository.cpp.o CMakeFiles/split_wise.dir/src/UserManager/UserService.cpp.o CMakeFiles/split_wise.dir/main.cpp.o -o split_wise 

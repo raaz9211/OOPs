@@ -1,0 +1,3 @@
+/home/raaz/Programming/OOPs/3 Machine Code/splitt_wise/build/CMakeFiles/split_wise.dir
+/home/raaz/Programming/OOPs/3 Machine Code/splitt_wise/build/CMakeFiles/edit_cache.dir
+/home/raaz/Programming/OOPs/3 Machine Code/splitt_wise/build/CMakeFiles/rebuild_cache.dir

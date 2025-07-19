@@ -63,6 +63,8 @@
         "mutex": "cpp",
         "unordered_set": "cpp",
         "queue": "cpp",
-        "location": "cpp"
+        "location": "cpp",
+        "bitset": "cpp",
+        "regex": "cpp"
     }
 }
