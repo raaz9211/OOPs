@@ -1,0 +1,58 @@
+#include <iostream>
+
+#include "user/InMemoryUserRepository.hpp"
+#include "group/InMemoryGroupRepository.hpp"
+#include "expense/ExpenseManager.hpp"
+#include "split/EqualSplit.hpp"
+
+int main() {
+    // std::shared_ptr<UserRepository> userRepo = std::make_shared<InMemoryUserRepository>();
+
+    // auto user1 = std::make_shared<User>("u1", "Alice", "alice@example.com", "9876543210");
+    // auto user2 = std::make_shared<User>("u2", "Bob", "bob@example.com", "9876543211");
+
+    // userRepo->addUser(user1);
+    // userRepo->addUser(user2);
+
+
+    // auto groupRepo = std::make_shared<InMemoryGroupRepository>();
+
+    // auto group = std::make_shared<Group>("g1", "trip");
+
+    // group->addMember(user1);
+    // group->addMember(user2);
+    // groupRepo->addGroup(group);
+
+
+    // std::cout << "Group: " << group->getName() << "\nMembers:\n";
+    // for (const auto& member : group->getAllMembers()) {
+    //     std::cout << member->getName() << std::endl;
+    // }
+
+
+    // phase 2
+
+    auto userRepo = std::make_shared<InMemoryUserRepository>();
+    auto groupRepo = std::make_shared<InMemoryGroupRepository>();
+
+    auto alice = std::make_shared<User>("u1", "Alice", "alice@example.com", "9876543210");
+    auto bob   = std::make_shared<User>("u2", "Bob",   "bob@example.com",   "9876543211");
+
+    userRepo->addUser(alice);
+    userRepo->addUser(bob);
+
+
+    ExpenseManager manager(userRepo, groupRepo);
+
+
+    std::vector<std::shared_ptr<Split>> splits = {
+        std::make_shared<EqualSplit>(alice, 50),
+        std::make_shared<EqualSplit>(bob, 50)
+    };
+
+    manager.addExpense(ExpenseType::EQUAL, "e1", 100, "u1", splits);
+
+    manager.showBalances();
+
+    return 0;
+}
