@@ -19,7 +19,8 @@ private:
 
 public:
     ExpenseManager(std::shared_ptr<UserRepository> userRepo,
-                   std::shared_ptr<GroupRepository> groupRepo);
+                   std::shared_ptr<GroupRepository> groupRepo,
+                    std::shared_ptr<BalanceSheet> balanceSheet);
     
     void addExpense(ExpenseType type,
                 const std::string& id,

@@ -4,6 +4,9 @@
 #include "group/InMemoryGroupRepository.hpp"
 #include "expense/ExpenseManager.hpp"
 #include "split/EqualSplit.hpp"
+#include "settlement/Settlement.hpp"
+#include "settlement/SettlementService.hpp"
+#include "balancesheet/BalanceSheet.hpp"
 
 int main() {
     // std::shared_ptr<UserRepository> userRepo = std::make_shared<InMemoryUserRepository>();
@@ -34,6 +37,7 @@ int main() {
 
     auto userRepo = std::make_shared<InMemoryUserRepository>();
     auto groupRepo = std::make_shared<InMemoryGroupRepository>();
+    auto balanceSheet = std::make_shared<BalanceSheet>();
 
     auto alice = std::make_shared<User>("u1", "Alice", "alice@example.com", "9876543210");
     auto bob   = std::make_shared<User>("u2", "Bob",   "bob@example.com",   "9876543211");
@@ -42,7 +46,7 @@ int main() {
     userRepo->addUser(bob);
 
 
-    ExpenseManager manager(userRepo, groupRepo);
+    ExpenseManager manager(userRepo, groupRepo, balanceSheet);
 
 
     std::vector<std::shared_ptr<Split>> splits = {
@@ -53,6 +57,34 @@ int main() {
     manager.addExpense(ExpenseType::EQUAL, "e1", 100, "u1", splits);
 
     manager.showBalances();
+
+
+    auto settlementService = std::make_shared<SettlementService>();
+
+    auto settlement = std::make_shared<Settlement>(bob, alice, 30, "2025-07-27T23:00:00");
+    
+    settlementService->recordSettlement(settlement, balanceSheet);
+    
+    std::cout << "\nBalances AFTER settlement:" << std::endl;
+    manager.showBalances();
+
+    // Display settlement history
+    std::cout << "\nSettlement History:" << std::endl;
+    for (const auto& s : settlementService->getSettlement()) {
+        std::cout << s->getFrom()->getName() << " paid " << s->getTo()->getName()
+                  << " amount: " << s->getAmount() << " at " << s->getTimestamp() << std::endl;
+    }
+
+
+    // // phase 3
+    // auto alice = std::make_shared<User>("u1", "Alice", "alice@example.com", "9876543210");
+    // auto bob = std::make_shared<User>("u2", "Bob", "bob@example.com", "9876543211");
+
+    // Settlement s(bob, alice, 70.0, "2025-07-27T15:05:00");
+    // std::cout << s.getFrom()->getName() << " paid " << s.getTo()->getName()
+    //           << " amount: " << s.getAmount() << " at " << s.getTimestamp() << std::endl;
+
+
 
     return 0;
 }

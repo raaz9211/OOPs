@@ -66,6 +66,7 @@
         "location": "cpp",
         "bitset": "cpp",
         "regex": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "set": "cpp"
     }
 }

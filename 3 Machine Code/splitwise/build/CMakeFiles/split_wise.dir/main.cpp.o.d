@@ -199,4 +199,6 @@ CMakeFiles/split_wise.dir/main.cpp.o: \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/expense/EqualExpense.hpp \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/expense/ExactExpense.hpp \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/expense/PercentExpense.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/split/EqualSplit.hpp
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/split/EqualSplit.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/settlement/Settlement.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/settlement/SettlementService.hpp

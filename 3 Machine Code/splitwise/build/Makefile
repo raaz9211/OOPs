@@ -273,6 +273,54 @@ src/expense/PercentExpense.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/expense/PercentExpense.cpp.s
 .PHONY : src/expense/PercentExpense.cpp.s
 
+src/settlement/Settlement.o: src/settlement/Settlement.cpp.o
+.PHONY : src/settlement/Settlement.o
+
+# target to build an object file
+src/settlement/Settlement.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o
+.PHONY : src/settlement/Settlement.cpp.o
+
+src/settlement/Settlement.i: src/settlement/Settlement.cpp.i
+.PHONY : src/settlement/Settlement.i
+
+# target to preprocess a source file
+src/settlement/Settlement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.i
+.PHONY : src/settlement/Settlement.cpp.i
+
+src/settlement/Settlement.s: src/settlement/Settlement.cpp.s
+.PHONY : src/settlement/Settlement.s
+
+# target to generate assembly for a file
+src/settlement/Settlement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.s
+.PHONY : src/settlement/Settlement.cpp.s
+
+src/settlement/SettlementService.o: src/settlement/SettlementService.cpp.o
+.PHONY : src/settlement/SettlementService.o
+
+# target to build an object file
+src/settlement/SettlementService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o
+.PHONY : src/settlement/SettlementService.cpp.o
+
+src/settlement/SettlementService.i: src/settlement/SettlementService.cpp.i
+.PHONY : src/settlement/SettlementService.i
+
+# target to preprocess a source file
+src/settlement/SettlementService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.i
+.PHONY : src/settlement/SettlementService.cpp.i
+
+src/settlement/SettlementService.s: src/settlement/SettlementService.cpp.s
+.PHONY : src/settlement/SettlementService.s
+
+# target to generate assembly for a file
+src/settlement/SettlementService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.s
+.PHONY : src/settlement/SettlementService.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -300,6 +348,12 @@ help:
 	@echo "... src/expense/PercentExpense.o"
 	@echo "... src/expense/PercentExpense.i"
 	@echo "... src/expense/PercentExpense.s"
+	@echo "... src/settlement/Settlement.o"
+	@echo "... src/settlement/Settlement.i"
+	@echo "... src/settlement/Settlement.s"
+	@echo "... src/settlement/SettlementService.o"
+	@echo "... src/settlement/SettlementService.i"
+	@echo "... src/settlement/SettlementService.s"
 .PHONY : help
 
 

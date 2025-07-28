@@ -5,9 +5,10 @@
 
 
 ExpenseManager::ExpenseManager(std::shared_ptr<UserRepository> userRepo,
-                               std::shared_ptr<GroupRepository> groupRepo)
+                               std::shared_ptr<GroupRepository> groupRepo,
+                            std::shared_ptr<BalanceSheet> balanceSheet)
     : userRepo(userRepo), groupRepo(groupRepo),
-      balanceSheet(std::make_shared<BalanceSheet>()) {}
+      balanceSheet(balanceSheet) {}
 
     
 void ExpenseManager::addExpense(ExpenseType type,
