@@ -187,10 +187,10 @@ CMakeFiles/split_wise.dir/main.cpp.o: \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/group/Group.hpp \
  /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/group/../expense/Expense.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/group/../expense/../split/Split.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/group/../expense/ExpenseType.hpp \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/expense/ExpenseManager.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/expense/Expense.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/expense/../split/Split.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/expense/ExpenseType.hpp \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/expense/../balancesheet/BalanceSheet.hpp \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/bits/stl_map.h \
@@ -201,4 +201,5 @@ CMakeFiles/split_wise.dir/main.cpp.o: \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/expense/PercentExpense.hpp \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/split/EqualSplit.hpp \
  /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/settlement/Settlement.hpp \
- /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/settlement/SettlementService.hpp
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/settlement/SettlementService.hpp \
+ /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/include/group/GroupService.hpp

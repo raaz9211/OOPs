@@ -15,12 +15,15 @@ protected:
     std::shared_ptr<User> paidBy;
     std::vector<std::shared_ptr<Split>> splits;
     ExpenseType type;
+    std::string groupId;
+
 public:
     Expense(const std::string& id,
                  double amount,
                  const std::shared_ptr<User>& paidBy,
                  const std::vector<std::shared_ptr<Split>>& splits,
-                 ExpenseType type)
+                 ExpenseType type,
+                 const std::string& groupId = "")
     : id(id), amount(amount), paidBy(paidBy), splits(splits), type(type) {}
 
     virtual ~Expense() = default;
@@ -45,4 +48,9 @@ public:
     const std::string& getId() const { 
         return id; 
     }
+
+    const std::string& getGroupId() const {
+        return groupId;
+    }
+
 };

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/split_wise.dir/src/expense/ExpenseManager.cpp.o.d"
   "CMakeFiles/split_wise.dir/src/expense/PercentExpense.cpp.o"
   "CMakeFiles/split_wise.dir/src/expense/PercentExpense.cpp.o.d"
+  "CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o"
+  "CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o.d"
   "CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o"
   "CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o.d"
   "CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o"

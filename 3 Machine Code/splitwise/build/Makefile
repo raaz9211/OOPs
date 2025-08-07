@@ -273,6 +273,30 @@ src/expense/PercentExpense.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/expense/PercentExpense.cpp.s
 .PHONY : src/expense/PercentExpense.cpp.s
 
+src/group/GroupService.o: src/group/GroupService.cpp.o
+.PHONY : src/group/GroupService.o
+
+# target to build an object file
+src/group/GroupService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o
+.PHONY : src/group/GroupService.cpp.o
+
+src/group/GroupService.i: src/group/GroupService.cpp.i
+.PHONY : src/group/GroupService.i
+
+# target to preprocess a source file
+src/group/GroupService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/group/GroupService.cpp.i
+.PHONY : src/group/GroupService.cpp.i
+
+src/group/GroupService.s: src/group/GroupService.cpp.s
+.PHONY : src/group/GroupService.s
+
+# target to generate assembly for a file
+src/group/GroupService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/split_wise.dir/build.make CMakeFiles/split_wise.dir/src/group/GroupService.cpp.s
+.PHONY : src/group/GroupService.cpp.s
+
 src/settlement/Settlement.o: src/settlement/Settlement.cpp.o
 .PHONY : src/settlement/Settlement.o
 
@@ -348,6 +372,9 @@ help:
 	@echo "... src/expense/PercentExpense.o"
 	@echo "... src/expense/PercentExpense.i"
 	@echo "... src/expense/PercentExpense.s"
+	@echo "... src/group/GroupService.o"
+	@echo "... src/group/GroupService.i"
+	@echo "... src/group/GroupService.s"
 	@echo "... src/settlement/Settlement.o"
 	@echo "... src/settlement/Settlement.i"
 	@echo "... src/settlement/Settlement.s"

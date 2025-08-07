@@ -5,8 +5,9 @@
 EqualExpense::EqualExpense(const std::string& id,
                  double amount,
                  const std::shared_ptr<User>& paidBy,
-                 const std::vector<std::shared_ptr<Split>>& splits)
-                 : Expense(id, amount, paidBy, splits, ExpenseType::EQUAL) {}
+                 const std::vector<std::shared_ptr<Split>>& splits,
+                 const std::string& groupId)
+                 : Expense(id, amount, paidBy, splits, ExpenseType::EQUAL, groupId) {}
 
 bool EqualExpense::validate() const {
     if(splits.empty()) {

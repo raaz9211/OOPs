@@ -139,10 +139,24 @@ CMakeFiles/split_wise.dir/src/expense/PercentExpense.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/split_wise.dir/src/expense/PercentExpense.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raaz/Programming/OOPs/3 Machine Code/splitwise/src/expense/PercentExpense.cpp" -o CMakeFiles/split_wise.dir/src/expense/PercentExpense.cpp.s
 
+CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o: CMakeFiles/split_wise.dir/flags.make
+CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/src/group/GroupService.cpp
+CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o: CMakeFiles/split_wise.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/splitwise/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o -MF CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o.d -o CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/splitwise/src/group/GroupService.cpp"
+
+CMakeFiles/split_wise.dir/src/group/GroupService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/split_wise.dir/src/group/GroupService.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raaz/Programming/OOPs/3 Machine Code/splitwise/src/group/GroupService.cpp" > CMakeFiles/split_wise.dir/src/group/GroupService.cpp.i
+
+CMakeFiles/split_wise.dir/src/group/GroupService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/split_wise.dir/src/group/GroupService.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raaz/Programming/OOPs/3 Machine Code/splitwise/src/group/GroupService.cpp" -o CMakeFiles/split_wise.dir/src/group/GroupService.cpp.s
+
 CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o: CMakeFiles/split_wise.dir/flags.make
 CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/src/settlement/Settlement.cpp
 CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o: CMakeFiles/split_wise.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/splitwise/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/splitwise/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o -MF CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o.d -o CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/splitwise/src/settlement/Settlement.cpp"
 
 CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.s: cmake_force
 CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o: CMakeFiles/split_wise.dir/flags.make
 CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/src/settlement/SettlementService.cpp
 CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o: CMakeFiles/split_wise.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/splitwise/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/splitwise/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o -MF CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o.d -o CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/splitwise/src/settlement/SettlementService.cpp"
 
 CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.s: cmake_force
 CMakeFiles/split_wise.dir/main.cpp.o: CMakeFiles/split_wise.dir/flags.make
 CMakeFiles/split_wise.dir/main.cpp.o: /home/raaz/Programming/OOPs/3\ Machine\ Code/splitwise/main.cpp
 CMakeFiles/split_wise.dir/main.cpp.o: CMakeFiles/split_wise.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/splitwise/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/split_wise.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/splitwise/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/split_wise.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/split_wise.dir/main.cpp.o -MF CMakeFiles/split_wise.dir/main.cpp.o.d -o CMakeFiles/split_wise.dir/main.cpp.o -c "/home/raaz/Programming/OOPs/3 Machine Code/splitwise/main.cpp"
 
 CMakeFiles/split_wise.dir/main.cpp.i: cmake_force
@@ -188,6 +202,7 @@ split_wise_OBJECTS = \
 "CMakeFiles/split_wise.dir/src/expense/ExactExpense.cpp.o" \
 "CMakeFiles/split_wise.dir/src/expense/ExpenseManager.cpp.o" \
 "CMakeFiles/split_wise.dir/src/expense/PercentExpense.cpp.o" \
+"CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o" \
 "CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o" \
 "CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o" \
 "CMakeFiles/split_wise.dir/main.cpp.o"
@@ -200,12 +215,13 @@ split_wise: CMakeFiles/split_wise.dir/src/expense/EqualExpense.cpp.o
 split_wise: CMakeFiles/split_wise.dir/src/expense/ExactExpense.cpp.o
 split_wise: CMakeFiles/split_wise.dir/src/expense/ExpenseManager.cpp.o
 split_wise: CMakeFiles/split_wise.dir/src/expense/PercentExpense.cpp.o
+split_wise: CMakeFiles/split_wise.dir/src/group/GroupService.cpp.o
 split_wise: CMakeFiles/split_wise.dir/src/settlement/Settlement.cpp.o
 split_wise: CMakeFiles/split_wise.dir/src/settlement/SettlementService.cpp.o
 split_wise: CMakeFiles/split_wise.dir/main.cpp.o
 split_wise: CMakeFiles/split_wise.dir/build.make
 split_wise: CMakeFiles/split_wise.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/splitwise/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable split_wise"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/raaz/Programming/OOPs/3 Machine Code/splitwise/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable split_wise"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/split_wise.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

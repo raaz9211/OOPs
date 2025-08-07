@@ -7,6 +7,7 @@
 #include "settlement/Settlement.hpp"
 #include "settlement/SettlementService.hpp"
 #include "balancesheet/BalanceSheet.hpp"
+#include "group/GroupService.hpp"
 
 int main() {
     // std::shared_ptr<UserRepository> userRepo = std::make_shared<InMemoryUserRepository>();
@@ -38,12 +39,18 @@ int main() {
     auto userRepo = std::make_shared<InMemoryUserRepository>();
     auto groupRepo = std::make_shared<InMemoryGroupRepository>();
     auto balanceSheet = std::make_shared<BalanceSheet>();
+    auto groupService = std::make_shared<GroupService>(groupRepo, userRepo);
+
 
     auto alice = std::make_shared<User>("u1", "Alice", "alice@example.com", "9876543210");
     auto bob   = std::make_shared<User>("u2", "Bob",   "bob@example.com",   "9876543211");
 
     userRepo->addUser(alice);
     userRepo->addUser(bob);
+
+    auto group = groupService->createGroup("g1", "Trip");
+    groupService->addMember("g1", "u1");
+    groupService->addMember("g1", "u2");
 
 
     ExpenseManager manager(userRepo, groupRepo, balanceSheet);
@@ -54,8 +61,9 @@ int main() {
         std::make_shared<EqualSplit>(bob, 50)
     };
 
-    manager.addExpense(ExpenseType::EQUAL, "e1", 100, "u1", splits);
+    manager.addExpense(ExpenseType::EQUAL, "e1", 100, "u1", splits, "g1");
 
+    std::cout << "Balances BEFORE settlement:" << std::endl;
     manager.showBalances();
 
 
@@ -73,6 +81,14 @@ int main() {
     for (const auto& s : settlementService->getSettlement()) {
         std::cout << s->getFrom()->getName() << " paid " << s->getTo()->getName()
                   << " amount: " << s->getAmount() << " at " << s->getTimestamp() << std::endl;
+    }
+
+
+    std::cout << "\nExpenses for group '" << group->getName() << "'\n";
+    for (const auto& exp : group->getExpenses()) {
+        std::cout << "Expense ID: " << exp->getId()
+                  << ", Amount: " << exp->getAmount()
+                  << ", Paid by: " << exp->getPaidBy()->getName() << std::endl;
     }
 
 

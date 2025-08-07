@@ -6,12 +6,15 @@
 #include <memory>
 
 #include "../user/User.hpp"
+#include "../expense/Expense.hpp"
 
 class Group {
 private:
     std::string id;
     std::string name;
     std::unordered_set<std::shared_ptr<User>> members;
+    std::vector<std::shared_ptr<Expense>> expenses;
+
 
 public:
     Group(const std::string &_id, const std::string &_name)
@@ -33,5 +36,12 @@ public:
 
     std::vector<std::shared_ptr<User>> getAllMembers() const {
         return std::vector<std::shared_ptr<User>>(members.begin(), members.end());
+    }
+
+    void addExpense(const std::shared_ptr<Expense>& expense) {
+        expenses.push_back(expense);
+    }
+    const std::vector<std::shared_ptr<Expense>>& getExpenses() const {
+        return expenses;
     }
 };

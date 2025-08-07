@@ -5,8 +5,9 @@
 ExactExpense::ExactExpense(const std::string& id,
                  double amount,
                  const std::shared_ptr<User>& paidBy,
-                 const std::vector<std::shared_ptr<Split>>& splits)
-                 : Expense(id, amount, paidBy, splits, ExpenseType::EXACT) {}
+                 const std::vector<std::shared_ptr<Split>>& splits,
+                 const std::string& groupId)
+                 : Expense(id, amount, paidBy, splits, ExpenseType::EXACT, groupId) {}
 
 bool ExactExpense::validate() const {
     if(splits.empty()) {

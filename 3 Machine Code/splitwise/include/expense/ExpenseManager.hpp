@@ -26,7 +26,8 @@ public:
                 const std::string& id,
                 double amount,
                 const std::string& paidById,
-                const std::vector<std::shared_ptr<Split>>& splits);
+                const std::vector<std::shared_ptr<Split>>& splits,
+                const std::string& groupId = "");
 
     void showBalances() const;
 };
