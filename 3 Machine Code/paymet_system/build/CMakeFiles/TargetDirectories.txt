@@ -1,0 +1,3 @@
+/home/raaz/Programming/OOPs/3 Machine Code/paymet_system/build/CMakeFiles/payment_system.dir
+/home/raaz/Programming/OOPs/3 Machine Code/paymet_system/build/CMakeFiles/edit_cache.dir
+/home/raaz/Programming/OOPs/3 Machine Code/paymet_system/build/CMakeFiles/rebuild_cache.dir
