@@ -17,6 +17,9 @@ public:
 };
 
 
+// --------------------------------------------------------------
+
+
 class BankingSystem {
 public:
     virtual bool processPayment(double amount) = 0;
@@ -45,6 +48,9 @@ public:
         return r < 90;
     }
 };
+
+
+// --------------------------------------------------------------
 
 
 class PaymentGateway {
@@ -137,6 +143,8 @@ public:
     }
 };
 
+// --------------------------------------------------------------
+
 
 class PaymetGatewayProxy : public PaymentGateway {
 
@@ -184,6 +192,10 @@ public:
     }
 };
 
+
+// --------------------------------------------------------------
+
+
 enum class GatewayType{
     PAYMET,
     RAZORPAY
@@ -215,6 +227,7 @@ public:
 
 };
 
+// --------------------------------------------------------------
 
 GatewayFactory GatewayFactory::instance;
 
@@ -265,6 +278,9 @@ public:
         return PaymentService::getInstance().processPayment(req);
     }
  };
+
+
+ // --------------------------------------------------------------
 
 
 PaymentController PaymentController::instance;
